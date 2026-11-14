@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Võ Sỹ Sơn - Alibaba.com Account Manager &amp; Hệ Sinh Thái Xúc Tiến Xuất Khẩu B2B Toàn Diện</title>
+    <meta name="description" content="Chuyên gia tư vấn giải pháp Xuất khẩu B2B Alibaba.com, Góp vốn hợp tác gian hàng, Phân phối chuỗi Siêu thị - Nhà thuốc - Nhà sách nội địa và Kết nối giao thương quốc tế.">
+    <meta name="keywords" content="Alibaba.com, Võ Sỹ Sơn, Xuất khẩu B2B, Góp vốn gian hàng, Siêu thị WinMart Co.opmart, TradeArc, Trần Thanh Hiền, Aditya Shedge">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        aliOrange: '#FF6A00',
+                        aliDarkOrange: '#E05500',
+                        brandBlue: '#0A2540',
+                        brandNavy: '#071626',
+                        brandGold: '#D4AF37',
+                        accentGreen: '#10B981',
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts & FontAwesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .gradient-hero { background: radial-gradient(circle at 80% 20%, #1e3a5f 0%, #071626 100%); }
+        .glass-card { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.12); }
+        .glass-card-light { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(8px); border: 1px solid rgba(229, 231, 235, 1); }
+        .text-gradient-orange { background: linear-gradient(135deg, #FF6A00 0%, #FFA800 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .text-gradient-gold { background: linear-gradient(135deg, #D4AF37 0%, #FFDF73 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .shadow-glow-orange { box-shadow: 0 10px 30px -5px rgba(255, 106, 0, 0.35); }
+        .badge-pulse { animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .6; } }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-aliOrange selection:text-white">
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="bg-gradient-to-r from-orange-600 via-amber-600 to-orange-700 text-white text-xs sm:text-sm py-2 px-4 shadow-inner">
+        <div class="max-w-7xl mx-auto flex items-center justify-between flex-wrap gap-2">
+            <div class="flex items-center gap-2">
+                <span class="bg-white/20 px-2.5 py-0.5 rounded-full text-[11px] font-black uppercase tracking-wider">CHUYÊN GIA ALIBABA.COM</span>
+                <span class="font-medium hidden sm:inline">Tư vấn Xuất khẩu B2B · Đưa hàng vào Siêu thị · Hợp tác Góp vốn gian hàng</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-semibold ml-auto">
+                <a href="mailto:vosyson@alibaba-inc.com" class="hover:text-amber-200 transition-colors flex items-center gap-1.5">
+                    <i class="fa-solid fa-envelope"></i> <span>vosyson@alibaba-inc.com</span>
+                </a>
+                <span class="text-white/40">|</span>
+                <a href="#contact" class="hover:text-amber-200 underline font-bold flex items-center gap-1">
+                    <i class="fa-solid fa-qrcode"></i> <span>Quét Zalo Tư Vấn 1:1</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVIGATION HEADER -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3.5">
+                <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-orange-500 to-amber-600 flex items-center justify-center text-white shadow-lg shadow-orange-500/30">
+                    <i class="fa-solid fa-earth-asia text-2xl"></i>
+                </div>
+                <div>
+                    <div class="flex items-center gap-2">
+                        <span class="text-xl font-black tracking-tight text-slate-900 leading-tight">VÕ SỸ SƠN</span>
+                        <span class="px-2 py-0.5 text-[10px] font-bold bg-orange-100 text-orange-700 rounded-md uppercase">Official</span>
+                    </div>
+                    <span class="text-xs font-bold text-orange-600 tracking-wider uppercase block">Alibaba.com Account Manager</span>
+                </div>
+            </div>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden lg:flex items-center space-x-7 text-sm font-bold text-slate-600">
+                <a href="#criteria" class="hover:text-orange-600 transition-colors">Điều Kiện Tham Gia</a>
+                <a href="#alibaba" class="hover:text-orange-600 transition-colors">Giải Pháp Alibaba</a>
+                <a href="#sectors" class="hover:text-orange-600 transition-colors">5 Ngành Trọng Tâm</a>
+                <a href="#ecosystem" class="hover:text-orange-600 transition-colors">Hệ Sinh Thái Đối Tác</a>
+                <a href="#partnership" class="hover:text-orange-600 transition-colors">Góp Vốn &amp; Hợp Tác</a>
+                <a href="#contact" class="hover:text-orange-600 transition-colors">Liên Hệ &amp; Zalo</a>
+            </nav>
+
+            <div class="hidden sm:flex items-center space-x-3">
+                <a href="mailto:vosyson@alibaba-inc.com" class="p-2.5 rounded-xl border border-slate-200 hover:border-orange-500 text-slate-600 hover:text-orange-600 transition-colors" title="Gửi email trực tiếp">
+                    <i class="fa-solid fa-envelope text-base"></i>
+                </a>
+                <a href="#contact" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-700 hover:to-amber-700 text-white font-bold text-sm shadow-glow-orange transition-all flex items-center gap-2">
+                    <i class="fa-solid fa-qrcode text-base"></i>
+                    <span>Mã Zalo Sỹ Sơn</span>
+                </a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <button id="mobile-menu-btn" class="lg:hidden text-slate-700 p-2 focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 py-4 space-y-3 font-bold text-slate-700 shadow-xl">
+            <a href="#criteria" class="block hover:text-orange-600 py-1.5 border-b border-slate-100">Điều Kiện Tham Gia (SMEs &amp; HTX)</a>
+            <a href="#alibaba" class="block hover:text-orange-600 py-1.5 border-b border-slate-100">Giải Pháp Alibaba.com 2026</a>
+            <a href="#sectors" class="block hover:text-orange-600 py-1.5 border-b border-slate-100">5 Ngành Trọng Tâm &amp; Số Liệu</a>
+            <a href="#ecosystem" class="block hover:text-orange-600 py-1.5 border-b border-slate-100">Đối Tác (Trần Thanh Hiền &amp; Aditya)</a>
+            <a href="#partnership" class="block hover:text-orange-600 py-1.5 border-b border-slate-100">Cơ Chế Góp Vốn &amp; Hoa Hồng</a>
+            <div class="pt-2 space-y-2">
+                <a href="mailto:vosyson@alibaba-inc.com" class="block text-center py-2 text-xs font-semibold text-slate-600 bg-slate-100 rounded-lg">
+                    <i class="fa-solid fa-envelope mr-1 text-orange-600"></i> vosyson@alibaba-inc.com
+                </a>
+                <a href="#contact" class="block bg-orange-600 text-white text-center py-2.5 rounded-lg font-bold">
+                    <i class="fa-solid fa-qrcode mr-1"></i> Quét Mã Zalo Kết Nối Ngay
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="gradient-hero text-white relative overflow-hidden pt-12 pb-20 lg:pt-16 lg:pb-28">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-orange-500/15 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -top-20 -right-20 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/20 text-orange-400 text-xs sm:text-sm font-bold tracking-wide">
+                        <span class="w-2.5 h-2.5 rounded-full bg-orange-400 badge-pulse"></span>
+                        <span>Đồng Hành Cùng Doanh Nghiệp Nhỏ, Vừa (SMEs) &amp; Hợp Tác Xã Việt Nam</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-[1.18]">
+                        Đưa Sản Phẩm Việt <br/>
+                        <span class="text-gradient-orange">Vươn Ra Toàn Cầu</span> &amp; <br/>
+                        <span class="text-gradient-gold">Phủ Khắp Siêu Thị</span>
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-slate-300 leading-relaxed font-normal max-w-2xl">
+                        Tôi là <strong>Võ Sỹ Sơn</strong>, hỗ trợ các Doanh nghiệp sản xuất, Hợp tác xã (HTX) và Đơn vị thương mại Việt Nam xây dựng gian hàng xuất khẩu <strong>Alibaba.com</strong> chuẩn quốc tế chỉ với <strong>1-2 nhân sự</strong>. 
+                        Đồng thời mở rộng đầu ra qua hệ thống <strong>Siêu thị - Nhà sách - Nhà thuốc</strong> nội địa và hợp tác <strong>Góp vốn / Cổ phần / Chiết khấu trọn đời</strong>.
+                    </p>
+
+                    <!-- Key stats / Highlights -->
+                    <div class="grid grid-cols-3 gap-4 pt-4 border-t border-white/10">
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white">1 - 2</div>
+                            <div class="text-xs text-slate-400 font-semibold mt-0.5">Nhân sự vận hành tinh gọn</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-orange-400">100%</div>
+                            <div class="text-xs text-slate-400 font-semibold mt-0.5">Pháp nhân &amp; SP là làm được</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-amber-400">3-in-1</div>
+                            <div class="text-xs text-slate-400 font-semibold mt-0.5">Alibaba + Siêu Thị + Ngoại Thương</div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                        <a href="#contact" class="px-8 py-4 rounded-xl bg-gradient-to-r from-orange-500 via-orange-600 to-amber-600 text-white font-bold text-center shadow-glow-orange hover:scale-[1.02] transition-all flex items-center justify-center gap-2 text-base">
+                            <i class="fa-solid fa-qrcode text-lg"></i>
+                            <span>Quét Zalo Nhận Báo Cáo &amp; Tư Vấn 1:1</span>
+                        </a>
+                        <a href="#partnership" class="px-6 py-4 rounded-xl glass-card text-white hover:bg-white/10 font-bold text-center transition-all flex items-center justify-center gap-2 border border-white/20 text-base">
+                            <i class="fa-solid fa-handshake text-amber-400"></i>
+                            <span>Cơ Chế Hợp Tác Góp Vốn</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Profile Card & Real Official Poster Photo -->
+                <div class="lg:col-span-5">
+                    <div class="glass-card rounded-3xl p-6 sm:p-7 relative border border-white/20 shadow-2xl space-y-5">
+                        <div class="flex items-center gap-4 pb-4 border-b border-white/10">
+                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-orange-500 to-amber-500 flex items-center justify-center text-white text-2xl font-black shadow-lg">
+                                <i class="fa-solid fa-user-tie"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-black text-white">Võ Sỹ Sơn</h3>
+                                <p class="text-xs text-orange-400 font-bold uppercase tracking-wider">Account Manager · Alibaba.com Việt Nam</p>
+                            </div>
+                        </div>
+
+                        <!-- Direct Poster Showcase -->
+                        <div class="rounded-2xl overflow-hidden border border-white/15 bg-slate-900/60 shadow-inner group">
+                            <img src="https://sc02.alicdn.com/kf/S1bb5d3be76ab41fa96ece6e742c53e5fy.jpg" alt="Võ Sỹ Sơn - Alibaba.com Việt Nam" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+
+                        <!-- Official Credentials Info -->
+                        <div class="space-y-2.5 text-xs sm:text-sm text-slate-300">
+                            <div class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-envelope text-orange-400 mt-1"></i>
+                                <span><strong>Email chính thức:</strong> <a href="mailto:vosyson@alibaba-inc.com" class="text-orange-300 underline font-bold">vosyson@alibaba-inc.com</a></span>
+                            </div>
+                            <div class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-location-dot text-amber-400 mt-1"></i>
+                                <span><strong>Văn phòng:</strong> Tầng 19, Saigon Centre, 67 Lê Lợi, Bến Nghé, Quận 1, TP.HCM</span>
+                            </div>
+                            <div class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-shield-halved text-emerald-400 mt-1"></i>
+                                <span><strong>Cam kết:</strong> Đồng hành từ khâu thiết lập, tối ưu từ khóa đến khi có đơn hàng xuất khẩu đầu tiên.</span>
+                            </div>
+                        </div>
+
+                        <!-- Quick QR trigger -->
+                        <a href="#contact" class="block w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-500 hover:to-amber-500 text-white text-center font-bold text-sm shadow-md transition-all">
+                            <i class="fa-solid fa-qrcode text-base mr-1.5"></i> Xem Mã Zalo Kết Nối Ngay
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 1: ĐIỀU KIỆN THAM GIA (DỄ HIỂU & TINH GỌN) -->
+    <section class="py-16 sm:py-24 bg-white" id="criteria">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-orange-600 font-extrabold text-xs sm:text-sm uppercase tracking-wider">Đơn Giản Hóa Xuất Khẩu B2B</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-2">Doanh Nghiệp Cần Chuẩn Bị Những Gì?</h2>
+                <p class="text-slate-600 mt-4 text-base">Không cần bộ máy cồng kềnh, không cần kinh nghiệm xuất nhập khẩu phức tạp. Mọi quy trình đều được tối ưu và hướng dẫn trực tiếp.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-200 hover:border-orange-500/50 hover:shadow-xl transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-orange-100 text-orange-600 flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-orange-600 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">1. Có Pháp Nhân &amp; Sản Phẩm</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Chỉ cần bạn là <strong>Doanh nghiệp nhỏ và vừa (SMEs), Hợp tác xã (HTX), Hộ kinh doanh</strong> hoặc <strong>Công ty Thương mại</strong> có pháp nhân hợp lệ và có nguồn hàng rõ ràng tại Việt Nam.
+                    </p>
+                    <ul class="text-xs text-slate-500 space-y-2 border-t border-slate-200 pt-4 font-medium">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Không yêu cầu quy mô nhà máy lớn</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Hỗ trợ cả công ty Thương Mại &amp; HTX nông nghiệp</li>
+                    </ul>
+                </div>
+
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-200 hover:border-orange-500/50 hover:shadow-xl transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-amber-100 text-amber-600 flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-amber-600 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-users-gear"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">2. Nhân Sự Tinh Gọn (1-2 Người)</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Chỉ cần <strong>1 đến 2 nhân sự</strong> phụ trách trực chat, nhận RFQ báo giá và trao đổi với người mua quốc tế. Với công cụ AI thông minh trên sàn, rào cản ngoại ngữ được giải quyết tối đa.
+                    </p>
+                    <ul class="text-xs text-slate-500 space-y-2 border-t border-slate-200 pt-4 font-medium">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> AI hỗ trợ dịch thuật đa ngôn ngữ thời gian thực</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Đào tạo cầm tay chỉ việc 1:1 từ chuyên gia</li>
+                    </ul>
+                </div>
+
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-200 hover:border-orange-500/50 hover:shadow-xl transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-blue-100 text-blue-600 flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">3. Đồng Hành Tối Ưu B2B</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Được hướng dẫn thiết lập gian hàng số chuyên nghiệp, tối ưu dữ liệu từ khóa, tiếp cận khách hàng B2B chủ động qua hệ thống <strong>RFQ</strong> và bảo vệ thanh toán quốc tế <strong>Trade Assurance</strong>.
+                    </p>
+                    <ul class="text-xs text-slate-500 space-y-2 border-t border-slate-200 pt-4 font-medium">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Tối ưu chiến dịch quảng cáo P4P</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Nắm bắt xu hướng Buyer toàn cầu theo thời gian thực</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: BỘ CÔNG CỤ XUẤT KHẨU ALIBABA.COM -->
+    <section class="py-16 sm:py-24 bg-slate-100" id="alibaba">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-orange-600 font-extrabold text-xs sm:text-sm uppercase tracking-wider">Hạ Tầng Thương Mại Điện Tử B2B Số 1 Thế Giới</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-2">Giải Pháp &amp; Công Cụ Trên Alibaba.com</h2>
+                <p class="text-slate-600 mt-4 text-base">Hệ sinh thái công cụ hỗ trợ doanh nghiệp Việt Nam tiếp cận hơn 48 triệu nhà mua hàng B2B tích cực tại 190+ quốc gia.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm hover:shadow-lg transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-store"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Gian Hàng Số Chuẩn Quốc Tế</h3>
+                    <p class="text-slate-600 text-xs leading-relaxed">
+                        Thiết kế Minisite chuẩn SEO, đăng tải không giới hạn sản phẩm với chứng chỉ nhà cung cấp được xác minh (Verified Supplier / GGS).
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm hover:shadow-lg transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Quyền Báo Giá Chủ Động RFQ</h3>
+                    <p class="text-slate-600 text-xs leading-relaxed">
+                        Tiếp cận trực tiếp hàng ngàn đơn hỏi hàng (Request for Quotation) được người mua toàn cầu đăng tải mỗi ngày, chủ động chào giá.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm hover:shadow-lg transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-bullhorn"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Quảng Cáo Từ Khóa KWA / P4P</h3>
+                    <p class="text-slate-600 text-xs leading-relaxed">
+                        Đưa sản phẩm lên top kết quả tìm kiếm khi Buyer quốc tế gõ từ khóa, tối ưu chi phí đấu thầu thông minh bằng thuật toán AI.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm hover:shadow-lg transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Trade Assurance Bảo Vệ 100%</h3>
+                    <p class="text-slate-600 text-xs leading-relaxed">
+                        Cơ chế bảo lãnh thanh toán quốc tế, giúp người mua an tâm đặt cọc và đảm bảo người bán nhận đủ tiền khi xuất hàng đúng hợp đồng.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: 5 NHÓM NGÀNH TRỌNG TÂM (DỮ LIỆU THỰC TẾ 2026) -->
+    <section class="py-16 sm:py-24 bg-slate-900 text-white" id="sectors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-orange-400 font-extrabold text-xs sm:text-sm uppercase tracking-wider">Alibaba.com Analytics Pro</span>
+                <h2 class="text-3xl sm:text-4xl font-black mt-2">5 Nhóm Ngành Hàng Xuất Khẩu Trọng Điểm 2026</h2>
+                <p class="text-slate-400 mt-4 text-base">Dữ liệu thực tế về nhu cầu tìm kiếm, thị trường mua hàng lớn nhất và số lượng RFQ mỗi ngày từ hệ thống.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Ngành 1: Nông Sản -->
+                <div class="glass-card rounded-3xl p-7 flex flex-col justify-between hover:bg-white/10 transition-all border border-white/10">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-bold uppercase">Nông Sản &amp; Thực Phẩm</span>
+                            <span class="text-xs font-bold text-emerald-400"><i class="fa-solid fa-arrow-trend-up mr-1"></i>+28.4% YoY</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Gạo ST25, Cà Phê, Điều, Tiêu, Trái Cây Sấy</h3>
+                        <p class="text-slate-300 text-xs mb-4 leading-relaxed"><strong>48.500+</strong> lượt tìm/ngày · <strong>1.250+</strong> RFQ/ngày. Thị trường lớn: Đức &amp; EU (28.6%), Hoa Kỳ (22.4%), UAE (18.2%), Nhật Bản (14.5%).</p>
+                        <div class="bg-emerald-950/60 p-3 rounded-2xl border border-emerald-500/30 text-xs text-emerald-200 mb-4">
+                            <i class="fa-solid fa-lightbulb text-emerald-400 mr-1"></i> <strong>Lợi thế:</strong> Buyer ưu tiên chứng nhận HACCP, ISO, GlobalGAP, Organic và gửi mẫu test nhanh.
+                        </div>
+                    </div>
+                    <a href="#contact" class="text-xs font-bold text-orange-400 hover:text-orange-300 flex items-center justify-between pt-4 border-t border-white/10">
+                        <span>Nhận báo cáo chi tiết Nông Sản</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </div>
+
+                <!-- Ngành 2: May Mặc -->
+                <div class="glass-card rounded-3xl p-7 flex flex-col justify-between hover:bg-white/10 transition-all border border-white/10">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-full bg-blue-500/20 text-blue-400 text-xs font-bold uppercase">May Mặc &amp; Thời Trang</span>
+                            <span class="text-xs font-bold text-blue-400"><i class="fa-solid fa-arrow-trend-up mr-1"></i>+31.2% YoY</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Gia Công OEM/ODM, Đồng Phục, Áo Thun</h3>
+                        <p class="text-slate-300 text-xs mb-4 leading-relaxed"><strong>62.000+</strong> lượt tìm xưởng/ngày · <strong>1.820+</strong> RFQ/ngày. Thị trường: Hoa Kỳ (34.8%), Đức &amp; Anh (24.2%), Úc (12.5%), Canada (10.6%).</p>
+                        <div class="bg-blue-950/60 p-3 rounded-2xl border border-blue-500/30 text-xs text-blue-200 mb-4">
+                            <i class="fa-solid fa-lightbulb text-blue-400 mr-1"></i> <strong>Lợi thế:</strong> Tay nghề chuẩn, giá hợp lý, giao hàng nhanh và MOQ linh hoạt cho thương hiệu vừa &amp; nhỏ.
+                        </div>
+                    </div>
+                    <a href="#contact" class="text-xs font-bold text-orange-400 hover:text-orange-300 flex items-center justify-between pt-4 border-t border-white/10">
+                        <span>Nhận báo cáo chi tiết May Mặc</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </div>
+
+                <!-- Ngành 3: Nội Thất, Gỗ & Tre -->
+                <div class="glass-card rounded-3xl p-7 flex flex-col justify-between hover:bg-white/10 transition-all border border-white/10">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-full bg-amber-500/20 text-amber-400 text-xs font-bold uppercase">Nội Thất, Gỗ &amp; Tre</span>
+                            <span class="text-xs font-bold text-amber-400"><i class="fa-solid fa-trophy mr-1"></i>Top 5 Thế Giới</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Bàn Ghế Gỗ, Mây Tre, Nội Thất Ngoài Trời</h3>
+                        <p class="text-slate-300 text-xs mb-4 leading-relaxed"><strong>54.300+</strong> lượt tìm/ngày · <strong>1.450+</strong> RFQ container/ngày. Thị trường: Hoa Kỳ (38.6%), Châu Âu (26.4%), Úc (14.2%).</p>
+                        <div class="bg-amber-950/60 p-3 rounded-2xl border border-amber-500/30 text-xs text-amber-200 mb-4">
+                            <i class="fa-solid fa-lightbulb text-amber-400 mr-1"></i> <strong>Lợi thế:</strong> Năng lực làm mẫu theo bản vẽ CAD và xuất nguyên container (FOB/CIF).
+                        </div>
+                    </div>
+                    <a href="#contact" class="text-xs font-bold text-orange-400 hover:text-orange-300 flex items-center justify-between pt-4 border-t border-white/10">
+                        <span>Nhận báo cáo chi tiết Gỗ &amp; Nội Thất</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </div>
+
+                <!-- Ngành 4: Thủ Công Mỹ Nghệ -->
+                <div class="glass-card rounded-3xl p-7 flex flex-col justify-between hover:bg-white/10 transition-all border border-white/10">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-full bg-purple-500/20 text-purple-400 text-xs font-bold uppercase">Thủ Công Mỹ Nghệ</span>
+                            <span class="text-xs font-bold text-purple-400"><i class="fa-solid fa-arrow-trend-up mr-1"></i>+26.5% YoY</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Gốm Sứ, Mây Tre Đan, Quà Tặng Xanh</h3>
+                        <p class="text-slate-300 text-xs mb-4 leading-relaxed"><strong>29.400+</strong> lượt tìm/ngày · <strong>760+</strong> RFQ chuỗi bán lẻ. Thị trường: Pháp, Ý &amp; Đức (33.5%), Mỹ (31.2%), Nhật Bản (14.8%).</p>
+                        <div class="bg-purple-950/60 p-3 rounded-2xl border border-purple-500/30 text-xs text-purple-200 mb-4">
+                            <i class="fa-solid fa-lightbulb text-purple-400 mr-1"></i> <strong>Lợi thế:</strong> Câu chuyện văn hóa bản địa, vật liệu thân thiện môi trường, đơn hàng giá trị cao.
+                        </div>
+                    </div>
+                    <a href="#contact" class="text-xs font-bold text-orange-400 hover:text-orange-300 flex items-center justify-between pt-4 border-t border-white/10">
+                        <span>Nhận báo cáo chi tiết Mỹ Nghệ</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </div>
+
+                <!-- Ngành 5: Sản Phẩm Sức Khỏe -->
+                <div class="glass-card rounded-3xl p-7 flex flex-col justify-between hover:bg-white/10 transition-all border border-white/10">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-full bg-rose-500/20 text-rose-400 text-xs font-bold uppercase">Sức Khỏe &amp; Làm Đẹp</span>
+                            <span class="text-xs font-bold text-rose-400"><i class="fa-solid fa-fire mr-1"></i>+38.6% YoY</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Trà Thảo Mộc, Yến Sào, Mật Ong, Tinh Dầu</h3>
+                        <p class="text-slate-300 text-xs mb-4 leading-relaxed"><strong>36.800+</strong> lượt tìm/ngày · <strong>980+</strong> RFQ hỏi hàng. Thị trường: Mỹ (29.5%), Nhật Bản (19.8%), Châu Âu (18.4%), Hàn Quốc (16.2%).</p>
+                        <div class="bg-rose-950/60 p-3 rounded-2xl border border-rose-500/30 text-xs text-rose-200 mb-4">
+                            <i class="fa-solid fa-lightbulb text-rose-400 mr-1"></i> <strong>Lợi thế:</strong> Biên lợi nhuận cao; chuẩn bị hồ sơ kiểm định FDA, GMP, Organic/Halal để chốt đơn nhanh.
+                        </div>
+                    </div>
+                    <a href="#contact" class="text-xs font-bold text-orange-400 hover:text-orange-300 flex items-center justify-between pt-4 border-t border-white/10">
+                        <span>Nhận báo cáo chi tiết Sức Khỏe</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </div>
+
+                <!-- Ngành 6: Bao Bì & In Ấn -->
+                <div class="glass-card rounded-3xl p-7 flex flex-col justify-between hover:bg-white/10 transition-all border border-white/10">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-full bg-teal-500/20 text-teal-400 text-xs font-bold uppercase">Bao Bì &amp; Tiêu Dùng</span>
+                            <span class="text-xs font-bold text-teal-400"><i class="fa-solid fa-leaf mr-1"></i>+34.2% Eco</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Hộp Giấy, Bao Bì Sinh Học, Túi Vải Canvas</h3>
+                        <p class="text-slate-300 text-xs mb-4 leading-relaxed"><strong>42.600+</strong> lượt tìm/ngày · <strong>1.120+</strong> RFQ OEM/ngày. Thị trường: Mỹ (32.4%), EU (27.8%), Nhật &amp; Hàn (15.2%).</p>
+                        <div class="bg-teal-950/60 p-3 rounded-2xl border border-teal-500/30 text-xs text-teal-200 mb-4">
+                            <i class="fa-solid fa-lightbulb text-teal-400 mr-1"></i> <strong>Lợi thế:</strong> Nhà máy có chứng nhận FSC, ISO, Biodegradable nhận lượng RFQ vượt trội từ Âu - Mỹ.
+                        </div>
+                    </div>
+                    <a href="#contact" class="text-xs font-bold text-orange-400 hover:text-orange-300 flex items-center justify-between pt-4 border-t border-white/10">
+                        <span>Nhận báo cáo chi tiết Bao Bì</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: HỆ SINH THÁI ĐỐI TÁC (TRẦN THANH HIỀN & TRADEARC ADITYA) -->
+    <section class="py-16 sm:py-24 bg-white" id="ecosystem">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-orange-600 font-extrabold text-xs sm:text-sm uppercase tracking-wider">Mạng Lưới Nguồn Cung &amp; Đầu Ra Đa Kênh</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-2">Hệ Sinh Thái Đối Tác Chiến Lược</h2>
+                <p class="text-slate-600 mt-4 text-base">Tôi đồng hành cùng các chuyên gia hàng đầu để giải quyết toàn diện cả đầu ra trong nước và thị trường xuất khẩu quốc tế.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                
+                <!-- Đối tác 1: Anh Trần Thanh Hiền - Kênh Siêu Thị / Nhà Thuốc / Nhà Sách -->
+                <div class="rounded-3xl p-8 bg-gradient-to-br from-slate-900 via-slate-800 to-amber-950 text-white relative overflow-hidden shadow-2xl flex flex-col justify-between border border-amber-500/20">
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-16 h-16 rounded-2xl bg-amber-500/20 border border-amber-400/40 flex items-center justify-center text-amber-400 text-3xl">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs uppercase tracking-wider text-amber-400 font-bold block">Kênh Phân Phối Nội Địa VN</span>
+                                <h3 class="text-2xl font-black">Anh Trần Thanh Hiền</h3>
+                                <p class="text-xs text-slate-300 font-medium">Chuyên gia phát triển kênh Siêu Thị · Nhà Thuốc · Nhà Sách</p>
+                            </div>
+                        </div>
+
+                        <!-- Real Namecards Photo Evidence -->
+                        <div class="rounded-2xl overflow-hidden border border-white/20 bg-black/40 shadow-lg">
+                            <img src="https://sc02.alicdn.com/kf/H796c6c4a81da4d77a86e1fa00981d900y.jpg" alt="Bộ sưu tập đối tác phân phối của Anh Trần Thanh Hiền" class="w-full h-auto object-cover hover:scale-105 transition-transform duration-500">
+                            <div class="p-2.5 bg-black/60 text-[11px] text-amber-200 text-center font-medium">
+                                <i class="fa-solid fa-id-card-clip mr-1"></i> Minh chứng kinh nghiệm phát triển mạng lưới đối tác rộng khắp Việt Nam
+                            </div>
+                        </div>
+
+                        <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                            Đã từng trực tiếp đảm nhiệm vị trí Giám đốc Kinh doanh / Trưởng phòng bán hàng cho hàng chục tập đoàn &amp; thương hiệu uy tín (Liên Hoa, Cà Phê Bách, Xuân Thịnh, Nam Hoa, Scops, Yến Sào Nha Trang, DOHAMED, Rosemary Group...).
+                        </p>
+
+                        <div class="space-y-2.5 text-xs sm:text-sm text-slate-200">
+                            <div class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-amber-400"></i> <span>Đưa hàng vào chuỗi <strong>Siêu thị lớn (MT):</strong> Co.opmart, WinMart, Lotte, BigC...</span></div>
+                            <div class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-amber-400"></i> <span>Đưa hàng vào <strong>Hệ thống Nhà thuốc &amp; Chuỗi sức khỏe</strong> toàn quốc.</span></div>
+                            <div class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-amber-400"></i> <span>Khai thác mạng lưới <strong>Nhà sách &amp; Cửa hàng tiện lợi</strong> rộng khắp.</span></div>
+                        </div>
+                    </div>
+
+                    <div class="pt-6 border-t border-white/10 mt-6 flex items-center justify-between flex-wrap gap-4">
+                        <span class="text-xs text-amber-300 font-bold">Giải pháp tối ưu cho sản phẩm tiêu dùng &amp; sức khỏe</span>
+                        <a href="#contact" class="px-5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-900 font-black text-xs uppercase tracking-wider transition-all shadow-md">
+                            Kết Nối Kênh Phân Phối
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Đối tác 2: Mr. Aditya Shedge - TradeArc International Network -->
+                <div class="rounded-3xl p-8 bg-gradient-to-br from-blue-950 via-slate-900 to-slate-950 text-white relative overflow-hidden shadow-2xl flex flex-col justify-between border border-blue-500/20">
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-16 h-16 rounded-2xl bg-blue-500/20 border border-blue-400/40 flex items-center justify-center text-blue-400 text-3xl">
+                                <i class="fa-solid fa-handshake-angle"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs uppercase tracking-wider text-blue-400 font-bold block">International Sourcing &amp; Trade</span>
+                                <h3 class="text-2xl font-black">Mr. Aditya Shedge</h3>
+                                <p class="text-xs text-slate-300 font-medium">Founder · TradeArc International Business Network (India)</p>
+                            </div>
+                        </div>
+
+                        <!-- Real TradeArc Photo -->
+                        <div class="rounded-2xl overflow-hidden border border-white/20 bg-black/40 shadow-lg">
+                            <img src="https://sc02.alicdn.com/kf/Sb3e2b00c8c914ce894aa5c980de993c6H.jpg" alt="Hợp tác Quốc tế TradeArc - Việt Nam và Ấn Độ" class="w-full h-auto object-cover hover:scale-105 transition-transform duration-500">
+                            <div class="p-2.5 bg-black/60 text-[11px] text-blue-200 text-center font-medium">
+                                <i class="fa-solid fa-globe mr-1"></i> Sáng kiến kết nối giao thương quốc tế Việt Nam - Ấn Độ &amp; Toàn cầu
+                            </div>
+                        </div>
+
+                        <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                            Sáng kiến hợp tác chiến lược đa quốc gia giữa <strong>Việt Nam và Ấn Độ</strong>, mở rộng mạng lưới giao thương cho các nhà cung ứng và người mua B2B toàn cầu.
+                        </p>
+
+                        <div class="space-y-2.5 text-xs sm:text-sm text-slate-200">
+                            <div class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-blue-400"></i> <span>Kết nối <strong>Nguồn cung B2B (Sourcing)</strong> uy tín giữa VN, Ấn Độ và Quốc tế.</span></div>
+                            <div class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-blue-400"></i> <span>Hỗ trợ đàm phán thương mại, kiểm định chất lượng và xúc tiến xuất nhập khẩu.</span></div>
+                            <div class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-blue-400"></i> <span>Mở rộng thị trường Nam Á, Trung Đông &amp; các quốc gia nói tiếng Anh.</span></div>
+                        </div>
+                    </div>
+
+                    <div class="pt-6 border-t border-white/10 mt-6 flex items-center justify-between flex-wrap gap-4">
+                        <span class="text-xs text-blue-300 font-bold">Kết nối mạng lưới người mua B2B quốc tế</span>
+                        <a href="#contact" class="px-5 py-2.5 rounded-xl bg-blue-500 hover:bg-blue-400 text-white font-black text-xs uppercase tracking-wider transition-all shadow-md">
+                            Xúc Tiến Xuất Nhập Khẩu
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: GÓP VỐN & CÁC MÔ HÌNH HỢP TÁC -->
+    <section class="py-16 sm:py-24 bg-slate-100" id="partnership">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-orange-600 font-extrabold text-xs sm:text-sm uppercase tracking-wider">Cơ Chế Đồng Hành Độc Đáo</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-2">Các Hình Thức Hợp Tác Cùng Võ Sỹ Sơn</h2>
+                <p class="text-slate-600 mt-4 text-base">Ngoài các chính sách hỗ trợ của Alibaba.com, tôi sẵn sàng tham gia trực tiếp vào dự án của bạn với nhiều mô hình linh hoạt.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Model 1: Góp vốn -->
+                <div class="bg-white p-8 rounded-3xl border-2 border-orange-500 shadow-xl relative flex flex-col justify-between">
+                    <div class="absolute -top-4 right-8 bg-orange-600 text-white px-3.5 py-1 rounded-full text-xs font-black uppercase tracking-wider shadow">
+                        Đặc Biệt
+                    </div>
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-orange-100 text-orange-600 flex items-center justify-center text-2xl font-bold mb-6">
+                            <i class="fa-solid fa-coins"></i>
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-900 mb-3">Góp Vốn / Cổ Phần Gian Hàng</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Tôi sẵn sàng <strong>góp vốn trực tiếp</strong> hoặc chia sẻ chi phí mở gian hàng, đồng hành bằng cổ phần trong dự án Alibaba.com của bạn. Cùng chia sẻ chi phí, cùng chịu rủi ro và cùng tối đa hóa lợi nhuận.
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-100 pt-4">
+                        <span class="text-xs font-bold text-slate-500 uppercase block mb-1.5">Thích hợp cho:</span>
+                        <p class="text-xs text-slate-700 font-medium">Doanh nghiệp có sản phẩm độc đáo, xưởng sản xuất tốt nhưng muốn có chuyên gia cùng bỏ vốn và sát cánh vận hành.</p>
+                    </div>
+                </div>
+
+                <!-- Model 2: Đại lý / Hoa hồng -->
+                <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-blue-100 text-blue-600 flex items-center justify-center text-2xl font-bold mb-6">
+                            <i class="fa-solid fa-percent"></i>
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-900 mb-3">Bán Hàng &amp; Hoa Hồng Vĩnh Viễn</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Nhận làm đại lý thương mại, phát triển thị trường và bán hàng để hưởng <strong>hoa hồng trên đơn hàng</strong> hoặc <strong>chiết khấu vĩnh viễn</strong> theo hợp đồng dài hạn.
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-100 pt-4">
+                        <span class="text-xs font-bold text-slate-500 uppercase block mb-1.5">Thích hợp cho:</span>
+                        <p class="text-xs text-slate-700 font-medium">Đơn vị chuyên tâm sản xuất, muốn giao toàn bộ khâu bán hàng, mở rộng thị trường và đàm phán cho chuyên gia.</p>
+                    </div>
+                </div>
+
+                <!-- Model 3: Đa kênh -->
+                <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-2xl font-bold mb-6">
+                            <i class="fa-solid fa-arrows-split-up-and-left"></i>
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-900 mb-3">Phát Triển Đa Kênh Toàn Diện</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Kết hợp <strong>Alibaba.com</strong> (xuất khẩu B2B) + <strong>Chuỗi Siêu thị / Nhà thuốc / Nhà sách</strong> (nội địa) + <strong>Sourcing quốc tế</strong> (Aditya) tạo nên chuỗi cung ứng bền vững.
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-100 pt-4">
+                        <span class="text-xs font-bold text-slate-500 uppercase block mb-1.5">Thích hợp cho:</span>
+                        <p class="text-xs text-slate-700 font-medium">Doanh nghiệp muốn tăng trưởng cả 2 đầu: vừa giải quyết bài toán tiêu thụ trong nước vừa vươn ra quốc tế.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: CONTACT & EXACT OFFICIAL ZALO QR CARD -->
+    <section class="py-16 sm:py-24 bg-gradient-to-b from-slate-900 via-brandNavy to-slate-950 text-white relative" id="contact">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Contact info -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-500/20 text-orange-400 text-xs font-extrabold uppercase tracking-wider border border-orange-500/30">
+                        <i class="fa-solid fa-headset"></i> Kết Nối Trực Tiếp 1:1
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-tight">
+                        Hãy Trao Đổi Cùng Tôi <br/>
+                        <span class="text-gradient-orange">Xem Tôi Có Thể Giúp Gì Cho Bạn</span>
+                    </h2>
+
+                    <p class="text-slate-300 text-base leading-relaxed">
+                        Dù bạn muốn làm gian hàng Alibaba.com, tìm nguồn cung ứng, đưa hàng vào siêu thị hay thảo luận về mô hình hợp tác góp vốn — hãy quét Zalo hoặc gửi email trực tiếp để trao đổi cụ thể.
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-center gap-4 p-4 rounded-2xl bg-white/5 border border-white/10 hover:border-orange-500/40 transition-all">
+                            <div class="w-12 h-12 rounded-xl bg-orange-600 flex items-center justify-center text-white text-xl flex-shrink-0">
+                                <i class="fa-solid fa-user-check"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 uppercase font-bold">Chuyên Gia Tư Vấn</div>
+                                <div class="text-lg font-black text-white">Võ Sỹ Sơn</div>
+                                <div class="text-xs text-orange-300">Account Manager · Alibaba.com Việt Nam</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-2xl bg-white/5 border border-white/10 hover:border-orange-500/40 transition-all">
+                            <div class="w-12 h-12 rounded-xl bg-blue-600 flex items-center justify-center text-white text-xl flex-shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 uppercase font-bold">Email Chính Thức</div>
+                                <a href="mailto:vosyson@alibaba-inc.com" class="text-base sm:text-lg font-bold text-orange-400 hover:underline">vosyson@alibaba-inc.com</a>
+                                <div class="text-xs text-slate-400">Tiếp nhận hồ sơ năng lực &amp; đề xuất hợp tác 24/7</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-2xl bg-white/5 border border-white/10 hover:border-orange-500/40 transition-all">
+                            <div class="w-12 h-12 rounded-xl bg-amber-600 flex items-center justify-center text-white text-xl flex-shrink-0">
+                                <i class="fa-solid fa-building-user"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 uppercase font-bold">Địa Chỉ Làm Việc</div>
+                                <div class="text-sm sm:text-base font-semibold text-white">Tầng 19, Tòa nhà Saigon Centre, 67 Lê Lợi, P. Bến Nghé, Quận 1, TP.HCM</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exact Official Zalo QR Card Box -->
+                <div class="lg:col-span-6">
+                    <div class="bg-white rounded-3xl p-6 sm:p-8 text-slate-900 shadow-2xl relative border-4 border-orange-500">
+                        <div class="text-center mb-6">
+                            <span class="bg-orange-100 text-orange-700 px-3.5 py-1 rounded-full text-xs font-black uppercase tracking-wider">MÃ ZALO CHÍNH THỨC</span>
+                            <h3 class="text-2xl font-black text-slate-900 mt-2">Quét Mã Zalo Võ Sỹ Sơn</h3>
+                            <p class="text-slate-500 text-xs mt-1 font-medium">Nhận trọn bộ Báo cáo ngành 2026 &amp; Tư vấn chiến lược 1:1 miễn phí</p>
+                        </div>
+
+                        <!-- Real Official Zalo QR Image from user attachment -->
+                        <div class="flex flex-col items-center justify-center p-4 sm:p-6 bg-slate-50 rounded-2xl border border-slate-200">
+                            <div class="max-w-[300px] w-full bg-white p-2 rounded-2xl shadow-xl border-2 border-orange-200 overflow-hidden flex items-center justify-center">
+                                <img src="https://sc02.alicdn.com/kf/H80d1883c8e0748508120622c48130454O.jpg" alt="Danh thiếp Zalo Võ Sỹ Sơn" class="w-full h-auto object-contain rounded-xl">
+                            </div>
+                            <span class="text-xs text-slate-600 font-bold mt-4 flex items-center gap-1.5 text-center">
+                                <i class="fa-solid fa-camera text-orange-600 text-sm"></i> Mở ứng dụng Zalo trên điện thoại và quét mã QR ở trên
+                            </span>
+                        </div>
+
+                        <div class="mt-6 space-y-3 text-center">
+                            <a href="mailto:vosyson@alibaba-inc.com" class="w-full py-3.5 px-6 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-sm transition-all flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-envelope text-orange-400"></i> Gửi Email: vosyson@alibaba-inc.com
+                            </a>
+                            <a href="https://zalo.me" target="_blank" class="w-full py-3.5 px-6 rounded-xl bg-gradient-to-r from-orange-600 via-orange-500 to-amber-600 hover:from-orange-700 hover:to-amber-700 text-white font-extrabold text-sm shadow-glow-orange transition-all flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-qrcode text-base"></i> Mở Zalo Để Kết Nối Trực Tiếp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800 text-xs sm:text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div>
+                    <span class="text-lg font-black text-white block">Võ Sỹ Sơn · Alibaba.com B2B &amp; Supply Chain Ecosystem</span>
+                    <p class="text-slate-500 text-xs mt-1">
+                        Email: <a href="mailto:vosyson@alibaba-inc.com" class="text-orange-400 font-bold hover:underline">vosyson@alibaba-inc.com</a> | Văn phòng: Tầng 19, Saigon Centre, 67 Lê Lợi, Bến Nghé, Quận 1, TP.HCM
+                    </p>
+                </div>
+                <div class="flex items-center space-x-6 text-slate-400 font-semibold">
+                    <a href="#criteria" class="hover:text-white transition-colors">Điều kiện</a>
+                    <a href="#alibaba" class="hover:text-white transition-colors">Alibaba.com</a>
+                    <a href="#ecosystem" class="hover:text-white transition-colors">Đối tác</a>
+                    <a href="#partnership" class="hover:text-white transition-colors">Hợp tác</a>
+                    <a href="#contact" class="hover:text-white transition-colors">Zalo / Email</a>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-slate-900 text-center text-xs text-slate-600">
+                &copy; 2026 Võ Sỹ Sơn. All rights reserved. Alibaba.com Account Manager · Văn phòng Saigon Centre TP.HCM.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
