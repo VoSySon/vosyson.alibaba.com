@@ -1,0 +1,1476 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Võ Sỹ Sơn - Alibaba.com Account Manager &amp; Global B2B Export Ecosystem</title>
+    <meta name="description" content="Chuyên gia tư vấn giải pháp Xuất khẩu B2B Alibaba.com, Góp vốn hợp tác gian hàng, Phân phối chuỗi Siêu thị - Nhà thuốc - Nhà sách nội địa và Kết nối giao thương quốc tế.">
+    <meta name="keywords" content="Alibaba.com, Võ Sỹ Sơn, Xuất khẩu B2B, Góp vốn gian hàng, Siêu thị WinMart Co.opmart, TradeArc, Trần Thanh Hiền, Aditya Shedge">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        aliOrange: '#FF6A00',
+                        aliDarkOrange: '#E05500',
+                        brandBlue: '#0A2540',
+                        brandNavy: '#071626',
+                        brandGold: '#D4AF37',
+                        accentGreen: '#10B981',
+                        zaloBlue: '#0068FF',
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                    },
+                    animation: {
+                        'float-slow': 'float 6s ease-in-out infinite',
+                        'float-reverse': 'float-rev 7s ease-in-out infinite',
+                        'pulse-glow': 'pulseGlow 3s ease-in-out infinite',
+                        'shimmer': 'shimmer 2.5s linear infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-12px)' },
+                        },
+                        'float-rev': {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(10px)' },
+                        },
+                        pulseGlow: {
+                            '0%, 100%': { opacity: '0.4', transform: 'scale(1)' },
+                            '50%': { opacity: '0.8', transform: 'scale(1.08)' },
+                        },
+                        shimmer: {
+                            '100%': { transform: 'translateX(100%)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts & FontAwesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .gradient-hero { background: radial-gradient(circle at 80% 20%, #1e3a5f 0%, #071626 100%); }
+        .glass-card { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.12); }
+        .glass-card-light { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(8px); border: 1px solid rgba(229, 231, 235, 1); }
+        .text-gradient-orange { background: linear-gradient(135deg, #FF6A00 0%, #FFA800 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .text-gradient-gold { background: linear-gradient(135deg, #D4AF37 0%, #FFDF73 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .shadow-glow-orange { box-shadow: 0 10px 30px -5px rgba(255, 106, 0, 0.35); }
+        .badge-pulse { animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .6; } }
+
+        /* Modern Scroll Reveal Animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: opacity, transform;
+        }
+        .reveal.reveal-left {
+            transform: translateX(-35px);
+        }
+        .reveal.reveal-right {
+            transform: translateX(35px);
+        }
+        .reveal.reveal-scale {
+            transform: scale(0.92);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translate(0) scale(1);
+        }
+
+        /* Stagger Delays */
+        .delay-100 { transition-delay: 100ms; }
+        .delay-200 { transition-delay: 200ms; }
+        .delay-300 { transition-delay: 300ms; }
+        .delay-400 { transition-delay: 400ms; }
+        .delay-500 { transition-delay: 500ms; }
+
+        /* Interactive Card Hover Elevate */
+        .hover-lift {
+            transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-8px);
+        }
+
+        /* Floating Zalo Button Pulse Effect */
+        .zalo-pulse-ring {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 9999px;
+            background-color: #0068FF;
+            opacity: 0.75;
+            animation: zalo-ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+            z-index: -1;
+        }
+        @keyframes zalo-ping {
+            75%, 100% {
+                transform: scale(1.45);
+                opacity: 0;
+            }
+        }
+
+        /* Dynamic Glow Orbs */
+        .ambient-glow {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-aliOrange selection:text-white overflow-x-hidden">
+    <noscript><style>.reveal{opacity:1 !important;transform:none !important;}</style></noscript>
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="bg-gradient-to-r from-orange-600 via-amber-600 to-orange-700 text-white text-xs sm:text-sm py-2 px-4 shadow-inner relative z-50">
+        <div class="max-w-7xl mx-auto flex items-center justify-between flex-wrap gap-2">
+            <div class="flex items-center gap-2">
+                <span class="bg-white/20 px-2.5 py-0.5 rounded-full text-[11px] font-black uppercase tracking-wider" data-i18n="top_badge">CHUYÊN GIA ALIBABA.COM</span>
+                <span class="font-medium hidden sm:inline" data-i18n="top_subtitle">Tư vấn Xuất khẩu B2B · Đưa hàng vào Siêu thị · Hợp tác Góp vốn gian hàng</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-semibold ml-auto">
+                <a href="mailto:vosyson@alibaba-inc.com" class="hover:text-amber-200 transition-colors flex items-center gap-1.5">
+                    <i class="fa-solid fa-envelope"></i> <span>vosyson@alibaba-inc.com</span>
+                </a>
+                <span class="text-white/40">|</span>
+                <a href="#contact" class="hover:text-amber-200 underline font-bold flex items-center gap-1">
+                    <i class="fa-solid fa-qrcode"></i> <span data-i18n="top_zalo_link">Quét Zalo Tư Vấn 1:1</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVIGATION HEADER -->
+    <header id="main-header" class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-2.5 sm:space-x-3.5 min-w-0 lg:flex-shrink-0">
+                <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-gradient-to-br from-orange-500 to-amber-600 flex items-center justify-center text-white shadow-lg shadow-orange-500/30 transition-transform duration-300 hover:rotate-6 flex-shrink-0">
+                    <i class="fa-solid fa-earth-asia text-xl sm:text-2xl"></i>
+                </div>
+                <div class="min-w-0">
+                    <div class="flex items-center gap-2">
+                        <span class="text-base sm:text-xl font-black tracking-tight text-slate-900 leading-tight whitespace-nowrap">VÕ SỸ SƠN</span>
+                        <span class="hidden md:inline px-2 py-0.5 text-[10px] font-bold bg-orange-100 text-orange-700 rounded-md uppercase">Official</span>
+                    </div>
+                    <span class="hidden sm:block text-[10px] sm:text-[11px] font-bold text-orange-600 tracking-wider uppercase truncate" data-i18n="nav_role">Alibaba.com Account Manager</span>
+                </div>
+            </div>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden xl:flex items-center gap-3 2xl:gap-6 text-[12.5px] 2xl:text-sm font-bold text-slate-600 whitespace-nowrap">
+                <a href="#criteria" class="hover:text-orange-600 transition-colors" data-i18n="nav_criteria">Điều Kiện Tham Gia</a>
+                <a href="#alibaba" class="hover:text-orange-600 transition-colors" data-i18n="nav_alibaba">Giải Pháp Alibaba</a>
+                <a href="#sectors" class="hover:text-orange-600 transition-colors" data-i18n="nav_sectors">6 Ngành Trọng Tâm</a>
+                <a href="#ecosystem" class="hover:text-orange-600 transition-colors" data-i18n="nav_ecosystem">Hệ Sinh Thái Đối Tác</a>
+                <a href="#partnership" class="hover:text-orange-600 transition-colors" data-i18n="nav_partnership">Góp Vốn &amp; Hợp Tác</a>
+                <a href="#contact" class="hover:text-orange-600 transition-colors" data-i18n="nav_contact">Liên Hệ &amp; Zalo</a>
+            </nav>
+
+            <div class="flex items-center space-x-2.5">
+                <!-- 3-LANGUAGE SWITCHER (VI / EN / ZH) -->
+                <div class="flex items-center bg-slate-100 p-1 rounded-xl border border-slate-200 shadow-inner flex-shrink-0">
+                    <button id="lang-btn-vi" onclick="setLanguage('vi')" class="px-2.5 py-1 text-xs font-black rounded-lg transition-all bg-white text-orange-600 shadow-sm" title="Tiếng Việt" aria-label="Tiếng Việt">VI</button>
+                    <button id="lang-btn-en" onclick="setLanguage('en')" class="px-2.5 py-1 text-xs font-black rounded-lg transition-all text-slate-500 hover:text-slate-900" title="English" aria-label="English">EN</button>
+                    <button id="lang-btn-zh" onclick="setLanguage('zh')" class="px-2.5 py-1 text-xs font-black rounded-lg transition-all text-slate-500 hover:text-slate-900" title="简体中文" aria-label="简体中文">中文</button>
+                </div>
+
+                <a href="mailto:vosyson@alibaba-inc.com" class="hidden 2xl:flex p-2.5 rounded-xl border border-slate-200 hover:border-orange-500 text-slate-600 hover:text-orange-600 transition-colors" title="Email">
+                    <i class="fa-solid fa-envelope text-base"></i>
+                </a>
+                <a href="#contact" class="hidden lg:flex whitespace-nowrap px-4 py-2.5 rounded-xl bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-700 hover:to-amber-700 text-white font-bold text-xs shadow-glow-orange transition-all items-center gap-1.5 hover:scale-105 active:scale-95">
+                    <i class="fa-solid fa-qrcode text-sm"></i>
+                    <span data-i18n="nav_cta_zalo">Mã Zalo Sỹ Sơn</span>
+                </a>
+
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-btn" class="xl:hidden text-slate-700 p-2 focus:outline-none">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile dropdown -->
+        <div id="mobile-menu" class="hidden xl:hidden bg-white border-b border-slate-200 px-6 py-4 space-y-3 font-bold text-slate-700 shadow-xl transition-all">
+            <!-- Mobile Language Switcher Row -->
+            <div class="flex items-center justify-between py-2 border-b border-slate-100 mb-2">
+                <span class="text-xs text-slate-500 uppercase font-black">Ngôn ngữ / Language / 语言:</span>
+                <div class="flex items-center gap-1 bg-slate-100 p-1 rounded-lg">
+                    <button id="lang-m-vi" onclick="setLanguage('vi')" class="px-2.5 py-1 text-xs font-bold rounded bg-white text-orange-600">VI</button>
+                    <button id="lang-m-en" onclick="setLanguage('en')" class="px-2.5 py-1 text-xs font-bold rounded text-slate-600">EN</button>
+                    <button id="lang-m-zh" onclick="setLanguage('zh')" class="px-2.5 py-1 text-xs font-bold rounded text-slate-600">中文</button>
+                </div>
+            </div>
+            <a href="#criteria" class="block hover:text-orange-600 py-1.5 border-b border-slate-100" data-i18n="nav_criteria_m">Điều Kiện Tham Gia (SMEs &amp; HTX)</a>
+            <a href="#alibaba" class="block hover:text-orange-600 py-1.5 border-b border-slate-100" data-i18n="nav_alibaba_m">Giải Pháp Alibaba.com 2026</a>
+            <a href="#sectors" class="block hover:text-orange-600 py-1.5 border-b border-slate-100" data-i18n="nav_sectors_m">6 Ngành Trọng Tâm &amp; Số Liệu</a>
+            <a href="#ecosystem" class="block hover:text-orange-600 py-1.5 border-b border-slate-100" data-i18n="nav_ecosystem_m">Đối Tác (Trần Thanh Hiền &amp; Aditya)</a>
+            <a href="#partnership" class="block hover:text-orange-600 py-1.5 border-b border-slate-100" data-i18n="nav_partnership_m">Cơ Chế Góp Vốn &amp; Hoa Hồng</a>
+            <div class="pt-2 space-y-2">
+                <a href="mailto:vosyson@alibaba-inc.com" class="block text-center py-2 text-xs font-semibold text-slate-600 bg-slate-100 rounded-lg">
+                    <i class="fa-solid fa-envelope mr-1 text-orange-600"></i> vosyson@alibaba-inc.com
+                </a>
+                <a href="#contact" class="block bg-orange-600 text-white text-center py-2.5 rounded-lg font-bold" data-i18n="nav_cta_zalo_m">
+                    <i class="fa-solid fa-qrcode mr-1"></i> Quét Mã Zalo Kết Nối Ngay
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="gradient-hero text-white relative overflow-hidden pt-12 pb-20 lg:pt-16 lg:pb-28">
+        <!-- Dynamic Glow Orbs -->
+        <div class="ambient-glow top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-orange-500/15 animate-pulse-glow"></div>
+        <div class="ambient-glow -top-20 -right-20 w-96 h-96 bg-blue-500/20 animate-float-slow"></div>
+        <div class="ambient-glow bottom-0 left-10 w-80 h-80 bg-amber-500/10 animate-float-reverse"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-7 space-y-6 reveal reveal-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/20 text-orange-400 text-xs sm:text-sm font-bold tracking-wide">
+                        <span class="w-2.5 h-2.5 rounded-full bg-orange-400 badge-pulse"></span>
+                        <span data-i18n="hero_badge">Đồng Hành Cùng Doanh Nghiệp Nhỏ, Vừa (SMEs) &amp; Hợp Tác Xã Việt Nam</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-[1.18]" data-i18n="hero_title">
+                        Đưa Sản Phẩm Việt <br/>
+                        <span class="text-gradient-orange">Vươn Ra Toàn Cầu</span> &amp; <br/>
+                        <span class="text-gradient-gold">Phủ Khắp Siêu Thị</span>
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-slate-300 leading-relaxed font-normal max-w-2xl" data-i18n="hero_desc">
+                        Tôi là <strong>Võ Sỹ Sơn</strong>, hỗ trợ các Doanh nghiệp sản xuất, Hợp tác xã (HTX) và Đơn vị thương mại Việt Nam xây dựng gian hàng xuất khẩu <strong>Alibaba.com</strong> chuẩn quốc tế chỉ với <strong>1-2 nhân sự</strong>. 
+                        Đồng thời mở rộng đầu ra qua hệ thống <strong>Siêu thị - Nhà sách - Nhà thuốc</strong> nội địa và hợp tác <strong>Góp vốn / Cổ phần / Chiết khấu trọn đời</strong>.
+                    </p>
+
+                    <!-- Key stats / Highlights with animated cards -->
+                    <div class="grid grid-cols-3 gap-4 pt-4 border-t border-white/10">
+                        <div class="p-3 rounded-2xl bg-white/5 border border-white/10 hover-lift">
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white">1 - 2</div>
+                            <div class="text-xs text-slate-400 font-semibold mt-0.5" data-i18n="stat_staff">Nhân sự vận hành tinh gọn</div>
+                        </div>
+                        <div class="p-3 rounded-2xl bg-white/5 border border-white/10 hover-lift">
+                            <div class="text-2xl sm:text-3xl font-extrabold text-orange-400">100%</div>
+                            <div class="text-xs text-slate-400 font-semibold mt-0.5" data-i18n="stat_legal">Pháp nhân &amp; SP là làm được</div>
+                        </div>
+                        <div class="p-3 rounded-2xl bg-white/5 border border-white/10 hover-lift">
+                            <div class="text-2xl sm:text-3xl font-extrabold text-amber-400">3-in-1</div>
+                            <div class="text-xs text-slate-400 font-semibold mt-0.5" data-i18n="stat_ecosystem">Alibaba + Siêu Thị + Ngoại Thương</div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                        <a href="#contact" class="px-8 py-4 rounded-xl bg-gradient-to-r from-orange-500 via-orange-600 to-amber-600 text-white font-bold text-center shadow-glow-orange hover:scale-[1.03] transition-all flex items-center justify-center gap-2 text-base active:scale-95">
+                            <i class="fa-solid fa-qrcode text-lg"></i>
+                            <span data-i18n="hero_btn_zalo">Quét Zalo Nhận Báo Cáo &amp; Tư Vấn 1:1</span>
+                        </a>
+                        <a href="#partnership" class="px-6 py-4 rounded-xl glass-card text-white hover:bg-white/10 font-bold text-center transition-all flex items-center justify-center gap-2 border border-white/20 text-base hover:scale-[1.02] active:scale-95">
+                            <i class="fa-solid fa-handshake text-amber-400"></i>
+                            <span data-i18n="hero_btn_partnership">Cơ Chế Hợp Tác Góp Vốn</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Profile Card & Real Official Poster Photo -->
+                <div class="lg:col-span-5 reveal reveal-right">
+                    <div class="glass-card rounded-3xl p-6 sm:p-7 relative border border-white/20 shadow-2xl space-y-5 hover:border-orange-500/40 transition-all duration-500">
+                        <div class="flex items-center gap-4 pb-4 border-b border-white/10">
+                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-orange-500 to-amber-500 flex items-center justify-center text-white text-2xl font-black shadow-lg">
+                                <i class="fa-solid fa-user-tie"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-black text-white">Võ Sỹ Sơn</h3>
+                                <p class="text-xs text-orange-400 font-bold uppercase tracking-wider" data-i18n="profile_role">Account Manager · Alibaba.com Việt Nam</p>
+                            </div>
+                        </div>
+
+                        <!-- Direct Poster Showcase -->
+                        <div class="rounded-2xl overflow-hidden border border-white/15 bg-slate-900/60 shadow-inner group relative">
+                            <img id="hero-poster-img" src="https://sc02.alicdn.com/kf/S1bb5d3be76ab41fa96ece6e742c53e5fy.jpg" alt="Võ Sỹ Sơn - Alibaba.com Việt Nam" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                                <span class="text-xs text-white font-bold flex items-center gap-1.5"><i class="fa-solid fa-certificate text-orange-400"></i> Official Account Manager</span>
+                            </div>
+                        </div>
+
+                        <!-- Official Credentials Info -->
+                        <div class="space-y-2.5 text-xs sm:text-sm text-slate-300">
+                            <div class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-envelope text-orange-400 mt-1"></i>
+                                <span><strong data-i18n="cred_email_label">Email chính thức:</strong> <a href="mailto:vosyson@alibaba-inc.com" class="text-orange-300 underline font-bold hover:text-white">vosyson@alibaba-inc.com</a></span>
+                            </div>
+                            <div class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-location-dot text-amber-400 mt-1"></i>
+                                <span><strong data-i18n="cred_office_label">Văn phòng:</strong> <span data-i18n="cred_office_val">Tầng 19, Saigon Centre, 67 Lê Lợi, Bến Nghé, Quận 1, TP.HCM</span></span>
+                            </div>
+                            <div class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-shield-halved text-emerald-400 mt-1"></i>
+                                <span><strong data-i18n="cred_commit_label">Cam kết:</strong> <span data-i18n="cred_commit_val">Đồng hành từ khâu thiết lập, tối ưu từ khóa đến khi có đơn hàng xuất khẩu đầu tiên.</span></span>
+                            </div>
+                        </div>
+
+                        <!-- Quick QR trigger -->
+                        <a href="#contact" class="block w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-500 hover:to-amber-500 text-white text-center font-bold text-sm shadow-md transition-all hover:scale-[1.02] active:scale-95">
+                            <i class="fa-solid fa-qrcode text-base mr-1.5"></i> <span data-i18n="profile_btn_qr">Xem Mã Zalo Kết Nối Ngay</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 1: ĐIỀU KIỆN THAM GIA (DỄ HIỂU & TINH GỌN) -->
+    <section class="py-16 sm:py-24 bg-white relative" id="criteria">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <span class="text-orange-600 font-extrabold text-xs sm:text-sm uppercase tracking-wider" data-i18n="crit_badge">Đơn Giản Hóa Xuất Khẩu B2B</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-2" data-i18n="crit_title">Doanh Nghiệp Cần Chuẩn Bị Những Gì?</h2>
+                <p class="text-slate-600 mt-4 text-base" data-i18n="crit_subtitle">Không cần bộ máy cồng kềnh, không cần kinh nghiệm xuất nhập khẩu phức tạp. Mọi quy trình đều được tối ưu và hướng dẫn trực tiếp.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-200 hover:border-orange-500/50 hover:shadow-xl transition-all duration-300 group hover-lift reveal delay-100">
+                    <div class="w-14 h-14 rounded-2xl bg-orange-100 text-orange-600 flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-orange-600 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3" data-i18n="crit_box1_title">1. Có Pháp Nhân &amp; Sản Phẩm</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4" data-i18n="crit_box1_desc">
+                        Chỉ cần bạn là <strong>Doanh nghiệp nhỏ và vừa (SMEs), Hợp tác xã (HTX), Hộ kinh doanh</strong> hoặc <strong>Công ty Thương mại</strong> có pháp nhân hợp lệ và có nguồn hàng rõ ràng tại Việt Nam.
+                    </p>
+                    <ul class="text-xs text-slate-500 space-y-2 border-t border-slate-200 pt-4 font-medium">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> <span data-i18n="crit_box1_li1">Không yêu cầu quy mô nhà máy lớn</span></li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> <span data-i18n="crit_box1_li2">Hỗ trợ cả công ty Thương Mại &amp; HTX nông nghiệp</span></li>
+                    </ul>
+                </div>
+
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-200 hover:border-orange-500/50 hover:shadow-xl transition-all duration-300 group hover-lift reveal delay-200">
+                    <div class="w-14 h-14 rounded-2xl bg-amber-100 text-amber-600 flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-users-gear"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3" data-i18n="crit_box2_title">2. Nhân Sự Tinh Gọn (1-2 Người)</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4" data-i18n="crit_box2_desc">
+                        Chỉ cần <strong>1 đến 2 nhân sự</strong> phụ trách trực chat, nhận RFQ báo giá và trao đổi với người mua quốc tế. Với công cụ AI thông minh trên sàn, rào cản ngoại ngữ được giải quyết tối đa.
+                    </p>
+                    <ul class="text-xs text-slate-500 space-y-2 border-t border-slate-200 pt-4 font-medium">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> <span data-i18n="crit_box2_li1">AI hỗ trợ dịch thuật đa ngôn ngữ thời gian thực</span></li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> <span data-i18n="crit_box2_li2">Đào tạo cầm tay chỉ việc 1:1 từ chuyên gia</span></li>
+                    </ul>
+                </div>
+
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-200 hover:border-orange-500/50 hover:shadow-xl transition-all duration-300 group hover-lift reveal delay-300">
+                    <div class="w-14 h-14 rounded-2xl bg-blue-100 text-blue-600 flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3" data-i18n="crit_box3_title">3. Đồng Hành Tối Ưu B2B</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4" data-i18n="crit_box3_desc">
+                        Được hướng dẫn thiết lập gian hàng số chuyên nghiệp, tối ưu dữ liệu từ khóa, tiếp cận khách hàng B2B chủ động qua hệ thống <strong>RFQ</strong> và bảo vệ thanh toán quốc tế <strong>Trade Assurance</strong>.
+                    </p>
+                    <ul class="text-xs text-slate-500 space-y-2 border-t border-slate-200 pt-4 font-medium">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> <span data-i18n="crit_box3_li1">Tối ưu chiến dịch quảng cáo P4P</span></li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> <span data-i18n="crit_box3_li2">Nắm bắt xu hướng Buyer toàn cầu theo thời gian thực</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: BỘ CÔNG CỤ XUẤT KHẨU ALIBABA.COM -->
+    <section class="py-16 sm:py-24 bg-slate-100 relative" id="alibaba">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <span class="text-orange-600 font-extrabold text-xs sm:text-sm uppercase tracking-wider" data-i18n="ali_badge">Hạ Tầng Thương Mại Điện Tử B2B Số 1 Thế Giới</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-2" data-i18n="ali_title">Giải Pháp &amp; Công Cụ Trên Alibaba.com</h2>
+                <p class="text-slate-600 mt-4 text-base" data-i18n="ali_subtitle">Hệ sinh thái công cụ hỗ trợ doanh nghiệp Việt Nam tiếp cận hơn 48 triệu nhà mua hàng B2B tích cực tại 190+ quốc gia.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm hover:shadow-lg transition-all duration-300 hover-lift reveal delay-100">
+                    <div class="w-12 h-12 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-store"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2" data-i18n="ali_tool1_title">Gian Hàng Số Chuẩn Quốc Tế</h3>
+                    <p class="text-slate-600 text-xs leading-relaxed" data-i18n="ali_tool1_desc">
+                        Thiết kế Minisite chuẩn SEO, đăng tải không giới hạn sản phẩm với chứng chỉ nhà cung cấp được xác minh (Verified Supplier / GGS).
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm hover:shadow-lg transition-all duration-300 hover-lift reveal delay-200">
+                    <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2" data-i18n="ali_tool2_title">Quyền Báo Giá Chủ Động RFQ</h3>
+                    <p class="text-slate-600 text-xs leading-relaxed" data-i18n="ali_tool2_desc">
+                        Tiếp cận trực tiếp hàng ngàn đơn hỏi hàng (Request for Quotation) được người mua toàn cầu đăng tải mỗi ngày, chủ động chào giá.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm hover:shadow-lg transition-all duration-300 hover-lift reveal delay-300">
+                    <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-bullhorn"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2" data-i18n="ali_tool3_title">Quảng Cáo Từ Khóa KWA / P4P</h3>
+                    <p class="text-slate-600 text-xs leading-relaxed" data-i18n="ali_tool3_desc">
+                        Đưa sản phẩm lên top kết quả tìm kiếm khi Buyer quốc tế gõ từ khóa, tối ưu chi phí đấu thầu thông minh bằng thuật toán AI.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm hover:shadow-lg transition-all duration-300 hover-lift reveal delay-400">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2" data-i18n="ali_tool4_title">Trade Assurance Bảo Vệ 100%</h3>
+                    <p class="text-slate-600 text-xs leading-relaxed" data-i18n="ali_tool4_desc">
+                        Cơ chế bảo lãnh thanh toán quốc tế, giúp người mua an tâm đặt cọc và đảm bảo người bán nhận đủ tiền khi xuất hàng đúng hợp đồng.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: 6 NHÓM NGÀNH TRỌNG TÂM (DỮ LIỆU THỰC TẾ 2026) -->
+    <section class="py-16 sm:py-24 bg-slate-900 text-white relative overflow-hidden" id="sectors">
+        <div class="ambient-glow -top-40 left-1/3 w-[500px] h-[500px] bg-orange-600/10"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <span class="text-orange-400 font-extrabold text-xs sm:text-sm uppercase tracking-wider" data-i18n="sec_badge">Alibaba.com Analytics Pro</span>
+                <h2 class="text-3xl sm:text-4xl font-black mt-2" data-i18n="sec_title">6 Nhóm Ngành Hàng Xuất Khẩu Trọng Điểm 2026</h2>
+                <p class="text-slate-400 mt-4 text-base" data-i18n="sec_subtitle">Dữ liệu thực tế về nhu cầu tìm kiếm, thị trường mua hàng lớn nhất và số lượng RFQ mỗi ngày từ hệ thống.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Ngành 1: Nông Sản -->
+                <div class="glass-card rounded-3xl p-7 flex flex-col justify-between hover:bg-white/10 transition-all duration-300 border border-white/10 hover-lift reveal delay-100">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-bold uppercase" data-i18n="sec1_badge">Nông Sản &amp; Thực Phẩm</span>
+                            <span class="text-xs font-bold text-emerald-400"><i class="fa-solid fa-arrow-trend-up mr-1"></i>+28.4% YoY</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2" data-i18n="sec1_title">Gạo ST25, Cà Phê, Điều, Tiêu, Trái Cây Sấy</h3>
+                        <p class="text-slate-300 text-xs mb-4 leading-relaxed" data-i18n="sec1_desc"><strong>48.500+</strong> lượt tìm/ngày · <strong>1.250+</strong> RFQ/ngày. Thị trường lớn: Đức &amp; EU (28.6%), Hoa Kỳ (22.4%), UAE (18.2%), Nhật Bản (14.5%).</p>
+                        <div class="bg-emerald-950/60 p-3 rounded-2xl border border-emerald-500/30 text-xs text-emerald-200 mb-4" data-i18n="sec1_adv">
+                            <i class="fa-solid fa-lightbulb text-emerald-400 mr-1"></i> <strong>Lợi thế:</strong> Buyer ưu tiên chứng nhận HACCP, ISO, GlobalGAP, Organic và gửi mẫu test nhanh.
+                        </div>
+                    </div>
+                    <a href="#contact" class="text-xs font-bold text-orange-400 hover:text-orange-300 flex items-center justify-between pt-4 border-t border-white/10 group">
+                        <span data-i18n="sec1_cta">Nhận báo cáo chi tiết Nông Sản</span>
+                        <i class="fa-solid fa-chevron-right group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+
+                <!-- Ngành 2: May Mặc -->
+                <div class="glass-card rounded-3xl p-7 flex flex-col justify-between hover:bg-white/10 transition-all duration-300 border border-white/10 hover-lift reveal delay-200">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-full bg-blue-500/20 text-blue-400 text-xs font-bold uppercase" data-i18n="sec2_badge">May Mặc &amp; Thời Trang</span>
+                            <span class="text-xs font-bold text-blue-400"><i class="fa-solid fa-arrow-trend-up mr-1"></i>+31.2% YoY</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2" data-i18n="sec2_title">Gia Công OEM/ODM, Đồng Phục, Áo Thun</h3>
+                        <p class="text-slate-300 text-xs mb-4 leading-relaxed" data-i18n="sec2_desc"><strong>62.000+</strong> lượt tìm xưởng/ngày · <strong>1.820+</strong> RFQ/ngày. Thị trường: Hoa Kỳ (34.8%), Đức &amp; Anh (24.2%), Úc (12.5%), Canada (10.6%).</p>
+                        <div class="bg-blue-950/60 p-3 rounded-2xl border border-blue-500/30 text-xs text-blue-200 mb-4" data-i18n="sec2_adv">
+                            <i class="fa-solid fa-lightbulb text-blue-400 mr-1"></i> <strong>Lợi thế:</strong> Tay nghề chuẩn, giá hợp lý, giao hàng nhanh và MOQ linh hoạt cho thương hiệu vừa &amp; nhỏ.
+                        </div>
+                    </div>
+                    <a href="#contact" class="text-xs font-bold text-orange-400 hover:text-orange-300 flex items-center justify-between pt-4 border-t border-white/10 group">
+                        <span data-i18n="sec2_cta">Nhận báo cáo chi tiết May Mặc</span>
+                        <i class="fa-solid fa-chevron-right group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+
+                <!-- Ngành 3: Nội Thất, Gỗ & Tre -->
+                <div class="glass-card rounded-3xl p-7 flex flex-col justify-between hover:bg-white/10 transition-all duration-300 border border-white/10 hover-lift reveal delay-300">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-full bg-amber-500/20 text-amber-400 text-xs font-bold uppercase" data-i18n="sec3_badge">Nội Thất, Gỗ &amp; Tre</span>
+                            <span class="text-xs font-bold text-amber-400" data-i18n="sec3_trend"><i class="fa-solid fa-trophy mr-1"></i>Top 5 Thế Giới</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2" data-i18n="sec3_title">Bàn Ghế Gỗ, Mây Tre, Nội Thất Ngoài Trời</h3>
+                        <p class="text-slate-300 text-xs mb-4 leading-relaxed" data-i18n="sec3_desc"><strong>54.300+</strong> lượt tìm/ngày · <strong>1.450+</strong> RFQ container/ngày. Thị trường: Hoa Kỳ (38.6%), Châu Âu (26.4%), Úc (14.2%).</p>
+                        <div class="bg-amber-950/60 p-3 rounded-2xl border border-amber-500/30 text-xs text-amber-200 mb-4" data-i18n="sec3_adv">
+                            <i class="fa-solid fa-lightbulb text-amber-400 mr-1"></i> <strong>Lợi thế:</strong> Năng lực làm mẫu theo bản vẽ CAD và xuất nguyên container (FOB/CIF).
+                        </div>
+                    </div>
+                    <a href="#contact" class="text-xs font-bold text-orange-400 hover:text-orange-300 flex items-center justify-between pt-4 border-t border-white/10 group">
+                        <span data-i18n="sec3_cta">Nhận báo cáo chi tiết Gỗ &amp; Nội Thất</span>
+                        <i class="fa-solid fa-chevron-right group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+
+                <!-- Ngành 4: Thủ Công Mỹ Nghệ -->
+                <div class="glass-card rounded-3xl p-7 flex flex-col justify-between hover:bg-white/10 transition-all duration-300 border border-white/10 hover-lift reveal delay-100">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-full bg-purple-500/20 text-purple-400 text-xs font-bold uppercase" data-i18n="sec4_badge">Thủ Công Mỹ Nghệ</span>
+                            <span class="text-xs font-bold text-purple-400"><i class="fa-solid fa-arrow-trend-up mr-1"></i>+26.5% YoY</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2" data-i18n="sec4_title">Gốm Sứ, Mây Tre Đan, Quà Tặng Xanh</h3>
+                        <p class="text-slate-300 text-xs mb-4 leading-relaxed" data-i18n="sec4_desc"><strong>29.400+</strong> lượt tìm/ngày · <strong>760+</strong> RFQ chuỗi bán lẻ. Thị trường: Pháp, Ý &amp; Đức (33.5%), Mỹ (31.2%), Nhật Bản (14.8%).</p>
+                        <div class="bg-purple-950/60 p-3 rounded-2xl border border-purple-500/30 text-xs text-purple-200 mb-4" data-i18n="sec4_adv">
+                            <i class="fa-solid fa-lightbulb text-purple-400 mr-1"></i> <strong>Lợi thế:</strong> Câu chuyện văn hóa bản địa, vật liệu thân thiện môi trường, đơn hàng giá trị cao.
+                        </div>
+                    </div>
+                    <a href="#contact" class="text-xs font-bold text-orange-400 hover:text-orange-300 flex items-center justify-between pt-4 border-t border-white/10 group">
+                        <span data-i18n="sec4_cta">Nhận báo cáo chi tiết Mỹ Nghệ</span>
+                        <i class="fa-solid fa-chevron-right group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+
+                <!-- Ngành 5: Sản Phẩm Sức Khỏe -->
+                <div class="glass-card rounded-3xl p-7 flex flex-col justify-between hover:bg-white/10 transition-all duration-300 border border-white/10 hover-lift reveal delay-200">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-full bg-rose-500/20 text-rose-400 text-xs font-bold uppercase" data-i18n="sec5_badge">Sức Khỏe &amp; Làm Đẹp</span>
+                            <span class="text-xs font-bold text-rose-400"><i class="fa-solid fa-fire mr-1"></i>+38.6% YoY</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2" data-i18n="sec5_title">Trà Thảo Mộc, Yến Sào, Mật Ong, Tinh Dầu</h3>
+                        <p class="text-slate-300 text-xs mb-4 leading-relaxed" data-i18n="sec5_desc"><strong>36.800+</strong> lượt tìm/ngày · <strong>980+</strong> RFQ hỏi hàng. Thị trường: Mỹ (29.5%), Nhật Bản (19.8%), Châu Âu (18.4%), Hàn Quốc (16.2%).</p>
+                        <div class="bg-rose-950/60 p-3 rounded-2xl border border-rose-500/30 text-xs text-rose-200 mb-4" data-i18n="sec5_adv">
+                            <i class="fa-solid fa-lightbulb text-rose-400 mr-1"></i> <strong>Lợi thế:</strong> Biên lợi nhuận cao; chuẩn bị hồ sơ kiểm định FDA, GMP, Organic/Halal để chốt đơn nhanh.
+                        </div>
+                    </div>
+                    <a href="#contact" class="text-xs font-bold text-orange-400 hover:text-orange-300 flex items-center justify-between pt-4 border-t border-white/10 group">
+                        <span data-i18n="sec5_cta">Nhận báo cáo chi tiết Sức Khỏe</span>
+                        <i class="fa-solid fa-chevron-right group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+
+                <!-- Ngành 6: Bao Bì & In Ấn -->
+                <div class="glass-card rounded-3xl p-7 flex flex-col justify-between hover:bg-white/10 transition-all duration-300 border border-white/10 hover-lift reveal delay-300">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-full bg-teal-500/20 text-teal-400 text-xs font-bold uppercase" data-i18n="sec6_badge">Bao Bì &amp; Tiêu Dùng</span>
+                            <span class="text-xs font-bold text-teal-400" data-i18n="sec6_trend"><i class="fa-solid fa-leaf mr-1"></i>+34.2% Eco</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2" data-i18n="sec6_title">Hộp Giấy, Bao Bì Sinh Học, Túi Vải Canvas</h3>
+                        <p class="text-slate-300 text-xs mb-4 leading-relaxed" data-i18n="sec6_desc"><strong>42.600+</strong> lượt tìm/ngày · <strong>1.120+</strong> RFQ OEM/ngày. Thị trường: Mỹ (32.4%), EU (27.8%), Nhật &amp; Hàn (15.2%).</p>
+                        <div class="bg-teal-950/60 p-3 rounded-2xl border border-teal-500/30 text-xs text-teal-200 mb-4" data-i18n="sec6_adv">
+                            <i class="fa-solid fa-lightbulb text-teal-400 mr-1"></i> <strong>Lợi thế:</strong> Nhà máy có chứng nhận FSC, ISO, Biodegradable nhận lượng RFQ vượt trội từ Âu - Mỹ.
+                        </div>
+                    </div>
+                    <a href="#contact" class="text-xs font-bold text-orange-400 hover:text-orange-300 flex items-center justify-between pt-4 border-t border-white/10 group">
+                        <span data-i18n="sec6_cta">Nhận báo cáo chi tiết Bao Bì</span>
+                        <i class="fa-solid fa-chevron-right group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: HỆ SINH THÁI ĐỐI TÁC (TRẦN THANH HIỀN & TRADEARC ADITYA) -->
+    <section class="py-16 sm:py-24 bg-white relative" id="ecosystem">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <span class="text-orange-600 font-extrabold text-xs sm:text-sm uppercase tracking-wider" data-i18n="eco_badge">Mạng Lưới Nguồn Cung &amp; Đầu Ra Đa Kênh</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-2" data-i18n="eco_title">Hệ Sinh Thái Đối Tác Chiến Lược</h2>
+                <p class="text-slate-600 mt-4 text-base" data-i18n="eco_subtitle">Tôi đồng hành cùng các chuyên gia hàng đầu để giải quyết toàn diện cả đầu ra trong nước và thị trường xuất khẩu quốc tế.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                
+                <!-- Đối tác 1: Anh Trần Thanh Hiền - Kênh Siêu Thị / Nhà Thuốc / Nhà Sách -->
+                <div class="rounded-3xl p-8 bg-gradient-to-br from-slate-900 via-slate-800 to-amber-950 text-white relative overflow-hidden shadow-2xl flex flex-col justify-between border border-amber-500/20 hover-lift reveal delay-100">
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-16 h-16 rounded-2xl bg-amber-500/20 border border-amber-400/40 flex items-center justify-center text-amber-400 text-3xl">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs uppercase tracking-wider text-amber-400 font-bold block" data-i18n="partner1_tag">Kênh Phân Phối Nội Địa VN</span>
+                                <h3 class="text-2xl font-black" data-i18n="partner1_name">Anh Trần Thanh Hiền</h3>
+                                <p class="text-xs text-slate-300 font-medium" data-i18n="partner1_role">Chuyên gia phát triển kênh Siêu Thị · Nhà Thuốc · Nhà Sách</p>
+                            </div>
+                        </div>
+
+                        <!-- Chuyên gia Trần Thanh Hiền Portrait Photo -->
+                        <div class="rounded-2xl overflow-hidden border border-amber-500/30 bg-slate-950/90 shadow-xl p-3 flex flex-col items-center justify-center group">
+                            <div class="w-full flex items-center justify-center overflow-hidden rounded-xl bg-slate-900/60">
+                                <img src="https://sc02.alicdn.com/kf/Se19741ff6dd3495ab2f53a046d67b33b9.jpg" alt="Chuyên gia Trần Thanh Hiền - Phát triển kênh Siêu Thị &amp; Phân Phối" class="w-full max-h-[400px] h-auto object-contain rounded-lg group-hover:scale-[1.03] transition-transform duration-700">
+                            </div>
+                            <div class="w-full mt-2 pt-2 border-t border-white/10 text-center">
+                                <span class="text-[11px] text-amber-300 font-semibold tracking-wide" data-i18n="partner1_badge_desc">
+                                    <i class="fa-solid fa-user-check mr-1 text-amber-400"></i> Cựu Giám Đốc Kinh Doanh / Cố Vấn Cấp Cao Chuỗi MT &amp; GT Toàn Quốc
+                                </span>
+                            </div>
+                        </div>
+
+                        <p class="text-slate-300 text-xs sm:text-sm leading-relaxed" data-i18n="partner1_exp">
+                            Đã từng trực tiếp đảm nhiệm vị trí Giám đốc Kinh doanh / Trưởng phòng bán hàng cho hàng chục tập đoàn &amp; thương hiệu uy tín (Liên Hoa, Cà Phê Bách, Xuân Thịnh, Nam Hoa, Scops, Yến Sào Nha Trang, DOHAMED, Rosemary Group...).
+                        </p>
+
+                        <div class="space-y-2.5 text-xs sm:text-sm text-slate-200">
+                            <div class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-amber-400"></i> <span data-i18n="partner1_point1">Đưa hàng vào chuỗi <strong>Siêu thị lớn (MT):</strong> Co.opmart, WinMart, Lotte, BigC...</span></div>
+                            <div class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-amber-400"></i> <span data-i18n="partner1_point2">Đưa hàng vào <strong>Hệ thống Nhà thuốc &amp; Chuỗi sức khỏe</strong> toàn quốc.</span></div>
+                            <div class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-amber-400"></i> <span data-i18n="partner1_point3">Khai thác mạng lưới <strong>Nhà sách &amp; Cửa hàng tiện lợi</strong> rộng khắp.</span></div>
+                        </div>
+                    </div>
+
+                    <div class="pt-6 border-t border-white/10 mt-6 flex items-center justify-between flex-wrap gap-4">
+                        <span class="text-xs text-amber-300 font-bold" data-i18n="partner1_sub">Giải pháp tối ưu cho sản phẩm tiêu dùng &amp; sức khỏe</span>
+                        <a href="#contact" class="px-5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-900 font-black text-xs uppercase tracking-wider transition-all shadow-md hover:scale-105 active:scale-95" data-i18n="partner1_btn">
+                            Kết Nối Kênh Phân Phối
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Đối tác 2: Mr. Aditya Shedge - TradeArc International Network -->
+                <div class="rounded-3xl p-8 bg-gradient-to-br from-blue-950 via-slate-900 to-slate-950 text-white relative overflow-hidden shadow-2xl flex flex-col justify-between border border-blue-500/20 hover-lift reveal delay-200">
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-16 h-16 rounded-2xl bg-blue-500/20 border border-blue-400/40 flex items-center justify-center text-blue-400 text-3xl">
+                                <i class="fa-solid fa-handshake-angle"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs uppercase tracking-wider text-blue-400 font-bold block" data-i18n="partner2_tag">International Sourcing &amp; Trade</span>
+                                <h3 class="text-2xl font-black">Mr. Aditya Shedge</h3>
+                                <p class="text-xs text-slate-300 font-medium" data-i18n="partner2_role">Founder · TradeArc International Business Network (India)</p>
+                            </div>
+                        </div>
+
+                        <!-- Real TradeArc Photo -->
+                        <div class="rounded-2xl overflow-hidden border border-white/20 bg-black/40 shadow-lg group">
+                            <img src="https://sc02.alicdn.com/kf/Sb3e2b00c8c914ce894aa5c980de993c6H.jpg" alt="Hợp tác Quốc tế TradeArc - Việt Nam và Ấn Độ" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700">
+                            <div class="p-2.5 bg-black/60 text-[11px] text-blue-200 text-center font-medium" data-i18n="partner2_photo_cap">
+                                <i class="fa-solid fa-globe mr-1"></i> Sáng kiến kết nối giao thương quốc tế Việt Nam - Ấn Độ &amp; Toàn cầu
+                            </div>
+                        </div>
+
+                        <p class="text-slate-300 text-xs sm:text-sm leading-relaxed" data-i18n="partner2_exp">
+                            Sáng kiến hợp tác chiến lược đa quốc gia giữa <strong>Việt Nam và Ấn Độ</strong>, mở rộng mạng lưới giao thương cho các nhà cung ứng và người mua B2B toàn cầu.
+                        </p>
+
+                        <div class="space-y-2.5 text-xs sm:text-sm text-slate-200">
+                            <div class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-blue-400"></i> <span data-i18n="partner2_point1">Kết nối <strong>Nguồn cung B2B (Sourcing)</strong> uy tín giữa VN, Ấn Độ và Quốc tế.</span></div>
+                            <div class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-blue-400"></i> <span data-i18n="partner2_point2">Hỗ trợ đàm phán thương mại, kiểm định chất lượng và xúc tiến xuất nhập khẩu.</span></div>
+                            <div class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-blue-400"></i> <span data-i18n="partner2_point3">Mở rộng thị trường Nam Á, Trung Đông &amp; các quốc gia nói tiếng Anh.</span></div>
+                        </div>
+                    </div>
+
+                    <div class="pt-6 border-t border-white/10 mt-6 flex items-center justify-between flex-wrap gap-4">
+                        <span class="text-xs text-blue-300 font-bold" data-i18n="partner2_sub">Kết nối mạng lưới người mua B2B quốc tế</span>
+                        <a href="#contact" class="px-5 py-2.5 rounded-xl bg-blue-500 hover:bg-blue-400 text-white font-black text-xs uppercase tracking-wider transition-all shadow-md hover:scale-105 active:scale-95" data-i18n="partner2_btn">
+                            Xúc Tiến Xuất Nhập Khẩu
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: GÓP VỐN & CÁC MÔ HÌNH HỢP TÁC -->
+    <section class="py-16 sm:py-24 bg-slate-100 relative" id="partnership">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <span class="text-orange-600 font-extrabold text-xs sm:text-sm uppercase tracking-wider" data-i18n="part_badge">Cơ Chế Đồng Hành Độc Đáo</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-2" data-i18n="part_title">Các Hình Thức Hợp Tác Cùng Võ Sỹ Sơn</h2>
+                <p class="text-slate-600 mt-4 text-base" data-i18n="part_subtitle">Ngoài các chính sách hỗ trợ của Alibaba.com, tôi sẵn sàng tham gia trực tiếp vào dự án của bạn với nhiều mô hình linh hoạt.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Model 1: Góp vốn -->
+                <div class="bg-white p-8 rounded-3xl border-2 border-orange-500 shadow-xl relative flex flex-col justify-between hover-lift reveal delay-100">
+                    <div class="absolute -top-4 right-8 bg-orange-600 text-white px-3.5 py-1 rounded-full text-xs font-black uppercase tracking-wider shadow" data-i18n="part_model1_tag">
+                        Đặc Biệt
+                    </div>
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-orange-100 text-orange-600 flex items-center justify-center text-2xl font-bold mb-6">
+                            <i class="fa-solid fa-coins"></i>
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-900 mb-3" data-i18n="part_model1_title">Góp Vốn / Cổ Phần Gian Hàng</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6" data-i18n="part_model1_desc">
+                            Tôi sẵn sàng <strong>góp vốn trực tiếp</strong> hoặc chia sẻ chi phí mở gian hàng, đồng hành bằng cổ phần trong dự án Alibaba.com của bạn. Cùng chia sẻ chi phí, cùng chịu rủi ro và cùng tối đa hóa lợi nhuận.
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-100 pt-4">
+                        <span class="text-xs font-bold text-slate-500 uppercase block mb-1.5" data-i18n="part_model1_for_label">Thích hợp cho:</span>
+                        <p class="text-xs text-slate-700 font-medium" data-i18n="part_model1_for_val">Doanh nghiệp có sản phẩm độc đáo, xưởng sản xuất tốt nhưng muốn có chuyên gia cùng bỏ vốn và sát cánh vận hành.</p>
+                    </div>
+                </div>
+
+                <!-- Model 2: Đại lý / Hoa hồng -->
+                <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between hover-lift reveal delay-200">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-blue-100 text-blue-600 flex items-center justify-center text-2xl font-bold mb-6">
+                            <i class="fa-solid fa-percent"></i>
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-900 mb-3" data-i18n="part_model2_title">Bán Hàng &amp; Hoa Hồng Vĩnh Viễn</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6" data-i18n="part_model2_desc">
+                            Nhận làm đại lý thương mại, phát triển thị trường và bán hàng để hưởng <strong>hoa hồng trên đơn hàng</strong> hoặc <strong>chiết khấu vĩnh viễn</strong> theo hợp đồng dài hạn.
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-100 pt-4">
+                        <span class="text-xs font-bold text-slate-500 uppercase block mb-1.5" data-i18n="part_model2_for_label">Thích hợp cho:</span>
+                        <p class="text-xs text-slate-700 font-medium" data-i18n="part_model2_for_val">Đơn vị chuyên tâm sản xuất, muốn giao toàn bộ khâu bán hàng, mở rộng thị trường và đàm phán cho chuyên gia.</p>
+                    </div>
+                </div>
+
+                <!-- Model 3: Đa kênh -->
+                <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between hover-lift reveal delay-300">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-2xl font-bold mb-6">
+                            <i class="fa-solid fa-arrows-split-up-and-left"></i>
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-900 mb-3" data-i18n="part_model3_title">Phát Triển Đa Kênh Toàn Diện</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6" data-i18n="part_model3_desc">
+                            Kết hợp <strong>Alibaba.com</strong> (xuất khẩu B2B) + <strong>Chuỗi Siêu thị / Nhà thuốc / Nhà sách</strong> (nội địa) + <strong>Sourcing quốc tế</strong> (Aditya) tạo nên chuỗi cung ứng bền vững.
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-100 pt-4">
+                        <span class="text-xs font-bold text-slate-500 uppercase block mb-1.5" data-i18n="part_model3_for_label">Thích hợp cho:</span>
+                        <p class="text-xs text-slate-700 font-medium" data-i18n="part_model3_for_val">Doanh nghiệp muốn tăng trưởng cả 2 đầu: vừa giải quyết bài toán tiêu thụ trong nước vừa vươn ra quốc tế.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: CONTACT & EXACT OFFICIAL ZALO QR CARD -->
+    <section class="py-16 sm:py-24 bg-gradient-to-b from-slate-900 via-brandNavy to-slate-950 text-white relative overflow-hidden" id="contact">
+        <div class="ambient-glow top-1/2 right-10 w-96 h-96 bg-orange-600/15"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Contact info -->
+                <div class="lg:col-span-6 space-y-6 reveal reveal-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-500/20 text-orange-400 text-xs font-extrabold uppercase tracking-wider border border-orange-500/30">
+                        <i class="fa-solid fa-headset"></i> <span data-i18n="contact_badge">Kết Nối Trực Tiếp 1:1</span>
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-tight" data-i18n="contact_title">
+                        Hãy Trao Đổi Cùng Tôi <br/>
+                        <span class="text-gradient-orange">Xem Tôi Có Thể Giúp Gì Cho Bạn</span>
+                    </h2>
+
+                    <p class="text-slate-300 text-base leading-relaxed" data-i18n="contact_desc">
+                        Dù bạn muốn làm gian hàng Alibaba.com, tìm nguồn cung ứng, đưa hàng vào siêu thị hay thảo luận về mô hình hợp tác góp vốn — hãy quét Zalo hoặc gửi email trực tiếp để trao đổi cụ thể.
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-center gap-4 p-4 rounded-2xl bg-white/5 border border-white/10 hover:border-orange-500/40 transition-all hover:bg-white/10">
+                            <div class="w-12 h-12 rounded-xl bg-orange-600 flex items-center justify-center text-white text-xl flex-shrink-0">
+                                <i class="fa-solid fa-user-check"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 uppercase font-bold" data-i18n="contact_c1_label">Chuyên Gia Tư Vấn</div>
+                                <div class="text-lg font-black text-white">Võ Sỹ Sơn</div>
+                                <div class="text-xs text-orange-300" data-i18n="contact_c1_role">Account Manager · Alibaba.com Việt Nam</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-2xl bg-white/5 border border-white/10 hover:border-orange-500/40 transition-all hover:bg-white/10">
+                            <div class="w-12 h-12 rounded-xl bg-blue-600 flex items-center justify-center text-white text-xl flex-shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 uppercase font-bold" data-i18n="contact_c2_label">Email Chính Thức</div>
+                                <a href="mailto:vosyson@alibaba-inc.com" class="text-base sm:text-lg font-bold text-orange-400 hover:underline">vosyson@alibaba-inc.com</a>
+                                <div class="text-xs text-slate-400" data-i18n="contact_c2_sub">Tiếp nhận hồ sơ năng lực &amp; đề xuất hợp tác 24/7</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-2xl bg-white/5 border border-white/10 hover:border-orange-500/40 transition-all hover:bg-white/10">
+                            <div class="w-12 h-12 rounded-xl bg-amber-600 flex items-center justify-center text-white text-xl flex-shrink-0">
+                                <i class="fa-solid fa-building-user"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 uppercase font-bold" data-i18n="contact_c3_label">Địa Chỉ Làm Việc</div>
+                                <div class="text-sm sm:text-base font-semibold text-white" data-i18n="contact_c3_addr">Tầng 19, Tòa nhà Saigon Centre, 67 Lê Lợi, P. Bến Nghé, Quận 1, TP.HCM</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exact Official Zalo QR Card Box -->
+                <div class="lg:col-span-6 reveal reveal-right">
+                    <div class="bg-white rounded-3xl p-6 sm:p-8 text-slate-900 shadow-2xl relative border-4 border-orange-500 hover-lift">
+                        <div class="text-center mb-6">
+                            <span class="bg-orange-100 text-orange-700 px-3.5 py-1 rounded-full text-xs font-black uppercase tracking-wider" data-i18n="zalo_box_badge">MÃ ZALO CHÍNH THỨC</span>
+                            <h3 class="text-2xl font-black text-slate-900 mt-2" data-i18n="zalo_box_title">Quét Mã Zalo Võ Sỹ Sơn</h3>
+                            <p class="text-slate-500 text-xs mt-1 font-medium" data-i18n="zalo_box_desc">Nhận trọn bộ Báo cáo ngành 2026 &amp; Tư vấn chiến lược 1:1 miễn phí</p>
+                        </div>
+
+                        <!-- Real Official Zalo QR Image from user attachment -->
+                        <div class="flex flex-col items-center justify-center p-4 sm:p-6 bg-slate-50 rounded-2xl border border-slate-200">
+                            <div class="max-w-[300px] w-full bg-white p-2 rounded-2xl shadow-xl border-2 border-orange-200 overflow-hidden flex items-center justify-center group">
+                                <img src="https://sc02.alicdn.com/kf/H80d1883c8e0748508120622c48130454O.jpg" alt="Danh thiếp Zalo Võ Sỹ Sơn" class="w-full h-auto object-contain rounded-xl group-hover:scale-105 transition-transform duration-500">
+                            </div>
+                            <span class="text-xs text-slate-600 font-bold mt-4 flex items-center gap-1.5 text-center" data-i18n="zalo_box_scan_hint">
+                                <i class="fa-solid fa-camera text-orange-600 text-sm"></i> Mở ứng dụng Zalo trên điện thoại và quét mã QR ở trên
+                            </span>
+                        </div>
+
+                        <div class="mt-6 space-y-3 text-center">
+                            <a href="mailto:vosyson@alibaba-inc.com" class="w-full py-3.5 px-6 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-sm transition-all flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-95">
+                                <i class="fa-solid fa-envelope text-orange-400"></i> <span data-i18n="zalo_btn_email">Gửi Email: vosyson@alibaba-inc.com</span>
+                            </a>
+                            <a href="https://zalo.me" target="_blank" class="w-full py-3.5 px-6 rounded-xl bg-gradient-to-r from-orange-600 via-orange-500 to-amber-600 hover:from-orange-700 hover:to-amber-700 text-white font-extrabold text-sm shadow-glow-orange transition-all flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-95">
+                                <i class="fa-solid fa-qrcode text-base"></i> <span data-i18n="zalo_btn_open">Mở Zalo Để Kết Nối Trực Tiếp</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800 text-xs sm:text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div>
+                    <span class="text-lg font-black text-white block">Võ Sỹ Sơn · Alibaba.com B2B &amp; Supply Chain Ecosystem</span>
+                    <p class="text-slate-500 text-xs mt-1" data-i18n="footer_office">
+                        Email: <a href="mailto:vosyson@alibaba-inc.com" class="text-orange-400 font-bold hover:underline">vosyson@alibaba-inc.com</a> | Văn phòng: Tầng 19, Saigon Centre, 67 Lê Lợi, Bến Nghé, Quận 1, TP.HCM
+                    </p>
+                </div>
+                <div class="flex items-center space-x-6 text-slate-400 font-semibold">
+                    <a href="#criteria" class="hover:text-white transition-colors" data-i18n="footer_crit">Điều kiện</a>
+                    <a href="#alibaba" class="hover:text-white transition-colors">Alibaba.com</a>
+                    <a href="#ecosystem" class="hover:text-white transition-colors" data-i18n="footer_partner">Đối tác</a>
+                    <a href="#partnership" class="hover:text-white transition-colors" data-i18n="footer_part">Hợp tác</a>
+                    <a href="#contact" class="hover:text-white transition-colors">Zalo / Email</a>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-slate-900 text-center text-xs text-slate-600" data-i18n="footer_copy">
+                &copy; 2026 Võ Sỹ Sơn. All rights reserved. Alibaba.com Account Manager · Văn phòng Saigon Centre TP.HCM.
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING ZALO QUICK-CONTACT BUTTON (GÓC PHẢI MÀN HÌNH) -->
+    <aside aria-label="Zalo contact button" class="fixed bottom-6 right-6 z-50 flex items-center group">
+        <!-- Floating Tooltip -->
+        <a href="#contact" class="hidden sm:flex items-center mr-3 px-3.5 py-2 bg-slate-900/90 text-white text-xs font-bold rounded-xl shadow-xl backdrop-blur-md border border-white/20 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-x-2 group-hover:translate-x-0">
+            <span class="w-2 h-2 rounded-full bg-green-400 mr-2 animate-ping"></span>
+            <span data-i18n="fab_tooltip">Chat Zalo với Sỹ Sơn</span>
+        </a>
+
+        <!-- Main FAB Button -->
+        <a href="#contact" class="relative flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-gradient-to-tr from-blue-600 via-blue-500 to-sky-400 text-white shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300 border-2 border-white/80" title="Quét mã Zalo Võ Sỹ Sơn">
+            <!-- Pulsing Ring Waves -->
+            <div class="zalo-pulse-ring"></div>
+            
+            <!-- Custom Zalo Icon / FontAwesome -->
+            <div class="flex flex-col items-center justify-center leading-none">
+                <span class="font-black text-sm sm:text-base tracking-tighter">Zalo</span>
+                <span class="text-[9px] font-bold text-sky-100 opacity-90 uppercase tracking-widest mt-0.5">Chat</span>
+            </div>
+
+            <!-- Online Badge Indicator -->
+            <span class="absolute top-0 right-0 w-4 h-4 bg-emerald-500 border-2 border-white rounded-full"></span>
+        </a>
+    </aside>
+
+    <!-- SCRIPTS: MOBILE MENU, ANIMATIONS & TRI-LINGUAL I18N SYSTEM -->
+    <script>
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+
+        // Header elevation on scroll (uses only classes guaranteed to exist)
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('main-header');
+            if (!header) return;
+            if (window.scrollY > 20) {
+                header.classList.add('shadow-lg');
+            } else {
+                header.classList.remove('shadow-lg');
+            }
+        });
+
+        // Intersection Observer for Smooth Scroll Reveal Animations
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.12
+        };
+
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => {
+            revealObserver.observe(el);
+        });
+
+        // Safety net: reveal anything already inside (or above) the viewport.
+        // Covers direct #anchor landings, restored scroll positions and older engines
+        // where the observer callback can be skipped on the first paint.
+        function revealInView() {
+            const vh = window.innerHeight || document.documentElement.clientHeight;
+            document.querySelectorAll('.reveal:not(.active)').forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < vh * 0.95 && rect.bottom > -40) {
+                    el.classList.add('active');
+                }
+            });
+        }
+        window.addEventListener('load', revealInView);
+        window.addEventListener('hashchange', revealInView);
+        window.addEventListener('resize', revealInView);
+        setTimeout(revealInView, 400);
+
+        // TRI-LINGUAL TRANSLATION DICTIONARY (VIETNAMESE, ENGLISH & SIMPLIFIED CHINESE)
+        const i18n = {
+            vi: {
+                top_badge: "CHUYÊN GIA ALIBABA.COM",
+                top_subtitle: "Tư vấn Xuất khẩu B2B · Đưa hàng vào Siêu thị · Hợp tác Góp vốn gian hàng",
+                top_zalo_link: "Quét Zalo Tư Vấn 1:1",
+                nav_role: "Alibaba.com Account Manager",
+                nav_criteria: "Điều Kiện Tham Gia",
+                nav_alibaba: "Giải Pháp Alibaba",
+                nav_sectors: "6 Ngành Trọng Tâm",
+                nav_ecosystem: "Hệ Sinh Thái Đối Tác",
+                nav_partnership: "Góp Vốn & Hợp Tác",
+                nav_contact: "Liên Hệ & Zalo",
+                nav_cta_zalo: "Mã Zalo Sỹ Sơn",
+                nav_criteria_m: "Điều Kiện Tham Gia (SMEs & HTX)",
+                nav_alibaba_m: "Giải Pháp Alibaba.com 2026",
+                nav_sectors_m: "6 Ngành Trọng Tâm & Số Liệu",
+                nav_ecosystem_m: "Đối Tác (Trần Thanh Hiền & Aditya)",
+                nav_partnership_m: "Cơ Chế Góp Vốn & Hoa Hồng",
+                nav_cta_zalo_m: "Quét Mã Zalo Kết Nối Ngay",
+                hero_badge: "Đồng Hành Cùng Doanh Nghiệp Nhỏ, Vừa (SMEs) & Hợp Tác Xã Việt Nam",
+                hero_title: 'Đưa Sản Phẩm Việt <br/><span class="text-gradient-orange">Vươn Ra Toàn Cầu</span> &amp; <br/><span class="text-gradient-gold">Phủ Khắp Siêu Thị</span>',
+                hero_desc: 'Tôi là <strong>Võ Sỹ Sơn</strong>, hỗ trợ các Doanh nghiệp sản xuất, Hợp tác xã (HTX) và Đơn vị thương mại Việt Nam xây dựng gian hàng xuất khẩu <strong>Alibaba.com</strong> chuẩn quốc tế chỉ với <strong>1-2 nhân sự</strong>. Đồng thời mở rộng đầu ra qua hệ thống <strong>Siêu thị - Nhà sách - Nhà thuốc</strong> nội địa và hợp tác <strong>Góp vốn / Cổ phần / Chiết khấu trọn đời</strong>.',
+                stat_staff: "Nhân sự vận hành tinh gọn",
+                stat_legal: "Pháp nhân & SP là làm được",
+                stat_ecosystem: "Alibaba + Siêu Thị + Ngoại Thương",
+                hero_btn_zalo: "Quét Zalo Nhận Báo Cáo & Tư Vấn 1:1",
+                hero_btn_partnership: "Cơ Chế Hợp Tác Góp Vốn",
+                profile_role: "Account Manager · Alibaba.com Việt Nam",
+                cred_email_label: "Email chính thức:",
+                cred_office_label: "Văn phòng:",
+                cred_office_val: "Tầng 19, Saigon Centre, 67 Lê Lợi, Bến Nghé, Quận 1, TP.HCM",
+                cred_commit_label: "Cam kết:",
+                cred_commit_val: "Đồng hành từ khâu thiết lập, tối ưu từ khóa đến khi có đơn hàng xuất khẩu đầu tiên.",
+                profile_btn_qr: "Xem Mã Zalo Kết Nối Ngay",
+                crit_badge: "Đơn Giản Hóa Xuất Khẩu B2B",
+                crit_title: "Doanh Nghiệp Cần Chuẩn Bị Những Gì?",
+                crit_subtitle: "Không cần bộ máy cồng kềnh, không cần kinh nghiệm xuất nhập khẩu phức tạp. Mọi quy trình đều được tối ưu và hướng dẫn trực tiếp.",
+                crit_box1_title: "1. Có Pháp Nhân & Sản Phẩm",
+                crit_box1_desc: "Chỉ cần bạn là <strong>Doanh nghiệp nhỏ và vừa (SMEs), Hợp tác xã (HTX), Hộ kinh doanh</strong> hoặc <strong>Công ty Thương mại</strong> có pháp nhân hợp lệ và có nguồn hàng rõ ràng tại Việt Nam.",
+                crit_box1_li1: "Không yêu cầu quy mô nhà máy lớn",
+                crit_box1_li2: "Hỗ trợ cả công ty Thương Mại & HTX nông nghiệp",
+                crit_box2_title: "2. Nhân Sự Tinh Gọn (1-2 Người)",
+                crit_box2_desc: "Chỉ cần <strong>1 đến 2 nhân sự</strong> phụ trách trực chat, nhận RFQ báo giá và trao đổi với người mua quốc tế. Với công cụ AI thông minh trên sàn, rào cản ngoại ngữ được giải quyết tối đa.",
+                crit_box2_li1: "AI hỗ trợ dịch thuật đa ngôn ngữ thời gian thực",
+                crit_box2_li2: "Đào tạo cầm tay chỉ việc 1:1 từ chuyên gia",
+                crit_box3_title: "3. Đồng Hành Tối Ưu B2B",
+                crit_box3_desc: "Được hướng dẫn thiết lập gian hàng số chuyên nghiệp, tối ưu dữ liệu từ khóa, tiếp cận khách hàng B2B chủ động qua hệ thống <strong>RFQ</strong> và bảo vệ thanh toán quốc tế <strong>Trade Assurance</strong>.",
+                crit_box3_li1: "Tối ưu chiến dịch quảng cáo P4P",
+                crit_box3_li2: "Nắm bắt xu hướng Buyer toàn cầu theo thời gian thực",
+                ali_badge: "Hạ Tầng Thương Mại Điện Tử B2B Số 1 Thế Giới",
+                ali_title: "Giải Pháp & Công Cụ Trên Alibaba.com",
+                ali_subtitle: "Hệ sinh thái công cụ hỗ trợ doanh nghiệp Việt Nam tiếp cận hơn 48 triệu nhà mua hàng B2B tích cực tại 190+ quốc gia.",
+                ali_tool1_title: "Gian Hàng Số Chuẩn Quốc Tế",
+                ali_tool1_desc: "Thiết kế Minisite chuẩn SEO, đăng tải không giới hạn sản phẩm với chứng chỉ nhà cung cấp được xác minh (Verified Supplier / GGS).",
+                ali_tool2_title: "Quyền Báo Giá Chủ Động RFQ",
+                ali_tool2_desc: "Tiếp cận trực tiếp hàng ngàn đơn hỏi hàng (Request for Quotation) được người mua toàn cầu đăng tải mỗi ngày, chủ động chào giá.",
+                ali_tool3_title: "Quảng Cáo Từ Khóa KWA / P4P",
+                ali_tool3_desc: "Đưa sản phẩm lên top kết quả tìm kiếm khi Buyer quốc tế gõ từ khóa, tối ưu chi phí đấu thầu thông minh bằng thuật toán AI.",
+                ali_tool4_title: "Trade Assurance Bảo Vệ 100%",
+                ali_tool4_desc: "Cơ chế bảo lãnh thanh toán quốc tế, giúp người mua an tâm đặt cọc và đảm bảo người bán nhận đủ tiền khi xuất hàng đúng hợp đồng.",
+                sec_badge: "Alibaba.com Analytics Pro",
+                sec_title: "6 Nhóm Ngành Hàng Xuất Khẩu Trọng Điểm 2026",
+                sec_subtitle: "Dữ liệu thực tế về nhu cầu tìm kiếm, thị trường mua hàng lớn nhất và số lượng RFQ mỗi ngày từ hệ thống.",
+                sec1_badge: "Nông Sản & Thực Phẩm",
+                sec1_title: "Gạo ST25, Cà Phê, Điều, Tiêu, Trái Cây Sấy",
+                sec1_desc: "<strong>48.500+</strong> lượt tìm/ngày · <strong>1.250+</strong> RFQ/ngày. Thị trường lớn: Đức & EU (28.6%), Hoa Kỳ (22.4%), UAE (18.2%), Nhật Bản (14.5%).",
+                sec1_adv: '<i class="fa-solid fa-lightbulb text-emerald-400 mr-1"></i> <strong>Lợi thế:</strong> Buyer ưu tiên chứng nhận HACCP, ISO, GlobalGAP, Organic và gửi mẫu test nhanh.',
+                sec1_cta: "Nhận báo cáo chi tiết Nông Sản",
+                sec2_badge: "May Mặc & Thời Trang",
+                sec2_title: "Gia Công OEM/ODM, Đồng Phục, Áo Thun",
+                sec2_desc: "<strong>62.000+</strong> lượt tìm xưởng/ngày · <strong>1.820+</strong> RFQ/ngày. Thị trường: Hoa Kỳ (34.8%), Đức & Anh (24.2%), Úc (12.5%), Canada (10.6%).",
+                sec2_adv: '<i class="fa-solid fa-lightbulb text-blue-400 mr-1"></i> <strong>Lợi thế:</strong> Tay nghề chuẩn, giá hợp lý, giao hàng nhanh và MOQ linh hoạt cho thương hiệu vừa & nhỏ.',
+                sec2_cta: "Nhận báo cáo chi tiết May Mặc",
+                sec3_badge: "Nội Thất, Gỗ & Tre",
+                sec3_title: "Bàn Ghế Gỗ, Mây Tre, Nội Thất Ngoài Trời",
+                sec3_desc: "<strong>54.300+</strong> lượt tìm/ngày · <strong>1.450+</strong> RFQ container/ngày. Thị trường: Hoa Kỳ (38.6%), Châu Âu (26.4%), Úc (14.2%).",
+                sec3_adv: '<i class="fa-solid fa-lightbulb text-amber-400 mr-1"></i> <strong>Lợi thế:</strong> Năng lực làm mẫu theo bản vẽ CAD và xuất nguyên container (FOB/CIF).',
+                sec3_cta: "Nhận báo cáo chi tiết Gỗ & Nội Thất",
+                sec3_trend: '<i class="fa-solid fa-trophy mr-1"></i>Top 5 Thế Giới',
+                sec4_badge: "Thủ Công Mỹ Nghệ",
+                sec4_title: "Gốm Sứ, Mây Tre Đan, Quà Tặng Xanh",
+                sec4_desc: "<strong>29.400+</strong> lượt tìm/ngày · <strong>760+</strong> RFQ chuỗi bán lẻ. Thị trường: Pháp, Ý & Đức (33.5%), Mỹ (31.2%), Nhật Bản (14.8%).",
+                sec4_adv: '<i class="fa-solid fa-lightbulb text-purple-400 mr-1"></i> <strong>Lợi thế:</strong> Câu chuyện văn hóa bản địa, vật liệu thân thiện môi trường, đơn hàng giá trị cao.',
+                sec4_cta: "Nhận báo cáo chi tiết Mỹ Nghệ",
+                sec5_badge: "Sức Khỏe & Làm Đẹp",
+                sec5_title: "Trà Thảo Mộc, Yến Sào, Mật Ong, Tinh Dầu",
+                sec5_desc: "<strong>36.800+</strong> lượt tìm/ngày · <strong>980+</strong> RFQ hỏi hàng. Thị trường: Mỹ (29.5%), Nhật Bản (19.8%), Châu Âu (18.4%), Hàn Quốc (16.2%).",
+                sec5_adv: '<i class="fa-solid fa-lightbulb text-rose-400 mr-1"></i> <strong>Lợi thế:</strong> Biên lợi nhuận cao; chuẩn bị hồ sơ kiểm định FDA, GMP, Organic/Halal để chốt đơn nhanh.',
+                sec5_cta: "Nhận báo cáo chi tiết Sức Khỏe",
+                sec6_badge: "Bao Bì & Tiêu Dùng",
+                sec6_title: "Hộp Giấy, Bao Bì Sinh Học, Túi Vải Canvas",
+                sec6_desc: "<strong>42.600+</strong> lượt tìm/ngày · <strong>1.120+</strong> RFQ OEM/ngày. Thị trường: Mỹ (32.4%), EU (27.8%), Nhật & Hàn (15.2%).",
+                sec6_adv: '<i class="fa-solid fa-lightbulb text-teal-400 mr-1"></i> <strong>Lợi thế:</strong> Nhà máy có chứng nhận FSC, ISO, Biodegradable nhận lượng RFQ vượt trội từ Âu - Mỹ.',
+                sec6_cta: "Nhận báo cáo chi tiết Bao Bì",
+                sec6_trend: '<i class="fa-solid fa-leaf mr-1"></i>+34.2% Eco',
+                eco_badge: "Mạng Lưới Nguồn Cung & Đầu Ra Đa Kênh",
+                eco_title: "Hệ Sinh Thái Đối Tác Chiến Lược",
+                eco_subtitle: "Tôi đồng hành cùng các chuyên gia hàng đầu để giải quyết toàn diện cả đầu ra trong nước và thị trường xuất khẩu quốc tế.",
+                partner1_tag: "Kênh Phân Phối Nội Địa VN",
+                partner1_role: "Chuyên gia phát triển kênh Siêu Thị · Nhà Thuốc · Nhà Sách",
+                partner1_name: "Anh Trần Thanh Hiền",
+                partner1_badge_desc: '<i class="fa-solid fa-user-check mr-1 text-amber-400"></i> Cựu Giám Đốc Kinh Doanh / Cố Vấn Cấp Cao Chuỗi MT & GT Toàn Quốc',
+                partner1_exp: "Đã từng trực tiếp đảm nhiệm vị trí Giám đốc Kinh doanh / Trưởng phòng bán hàng cho hàng chục tập đoàn & thương hiệu uy tín (Liên Hoa, Cà Phê Bách, Xuân Thịnh, Nam Hoa, Scops, Yến Sào Nha Trang, DOHAMED, Rosemary Group...).",
+                partner1_point1: "Đưa hàng vào chuỗi <strong>Siêu thị lớn (MT):</strong> Co.opmart, WinMart, Lotte, BigC...",
+                partner1_point2: "Đưa hàng vào <strong>Hệ thống Nhà thuốc & Chuỗi sức khỏe</strong> toàn quốc.",
+                partner1_point3: "Khai thác mạng lưới <strong>Nhà sách & Cửa hàng tiện lợi</strong> rộng khắp.",
+                partner1_sub: "Giải pháp tối ưu cho sản phẩm tiêu dùng & sức khỏe",
+                partner1_btn: "Kết Nối Kênh Phân Phối",
+                partner2_tag: "International Sourcing & Trade",
+                partner2_role: "Founder · TradeArc International Business Network (India)",
+                partner2_photo_cap: '<i class="fa-solid fa-globe mr-1"></i> Sáng kiến kết nối giao thương quốc tế Việt Nam - Ấn Độ & Toàn cầu',
+                partner2_exp: "Sáng kiến hợp tác chiến lược đa quốc gia giữa <strong>Việt Nam và Ấn Độ</strong>, mở rộng mạng lưới giao thương cho các nhà cung ứng và người mua B2B toàn cầu.",
+                partner2_point1: "Kết nối <strong>Nguồn cung B2B (Sourcing)</strong> uy tín giữa VN, Ấn Độ và Quốc tế.",
+                partner2_point2: "Hỗ trợ đàm phán thương mại, kiểm định chất lượng và xúc tiến xuất nhập khẩu.",
+                partner2_point3: "Mở rộng thị trường Nam Á, Trung Đông & các quốc gia nói tiếng Anh.",
+                partner2_sub: "Kết nối mạng lưới người mua B2B quốc tế",
+                partner2_btn: "Xúc Tiến Xuất Nhập Khẩu",
+                part_badge: "Cơ Chế Đồng Hành Độc Đáo",
+                part_title: "Các Hình Thức Hợp Tác Cùng Võ Sỹ Sơn",
+                part_subtitle: "Ngoài các chính sách hỗ trợ của Alibaba.com, tôi sẵn sàng tham gia trực tiếp vào dự án của bạn với nhiều mô hình linh hoạt.",
+                part_model1_tag: "Đặc Biệt",
+                part_model1_title: "Góp Vốn / Cổ Phần Gian Hàng",
+                part_model1_desc: "Tôi sẵn sàng <strong>góp vốn trực tiếp</strong> hoặc chia sẻ chi phí mở gian hàng, đồng hành bằng cổ phần trong dự án Alibaba.com của bạn. Cùng chia sẻ chi phí, cùng chịu rủi ro và cùng tối đa hóa lợi nhuận.",
+                part_model1_for_label: "Thích hợp cho:",
+                part_model1_for_val: "Doanh nghiệp có sản phẩm độc đáo, xưởng sản xuất tốt nhưng muốn có chuyên gia cùng bỏ vốn và sát cánh vận hành.",
+                part_model2_title: "Bán Hàng & Hoa Hồng Vĩnh Viễn",
+                part_model2_desc: "Nhận làm đại lý thương mại, phát triển thị trường và bán hàng để hưởng <strong>hoa hồng trên đơn hàng</strong> hoặc <strong>chiết khấu vĩnh viễn</strong> theo hợp đồng dài hạn.",
+                part_model2_for_label: "Thích hợp cho:",
+                part_model2_for_val: "Đơn vị chuyên tâm sản xuất, muốn giao toàn bộ khâu bán hàng, mở rộng thị trường và đàm phán cho chuyên gia.",
+                part_model3_title: "Phát Triển Đa Kênh Toàn Diện",
+                part_model3_desc: "Kết hợp <strong>Alibaba.com</strong> (xuất khẩu B2B) + <strong>Chuỗi Siêu thị / Nhà thuốc / Nhà sách</strong> (nội địa) + <strong>Sourcing quốc tế</strong> (Aditya) tạo nên chuỗi cung ứng bền vững.",
+                part_model3_for_label: "Thích hợp cho:",
+                part_model3_for_val: "Doanh nghiệp muốn tăng trưởng cả 2 đầu: vừa giải quyết bài toán tiêu thụ trong nước vừa vươn ra quốc tế.",
+                contact_badge: "Kết Nối Trực Tiếp 1:1",
+                contact_title: 'Hãy Trao Đổi Cùng Tôi <br/><span class="text-gradient-orange">Xem Tôi Có Thể Giúp Gì Cho Bạn</span>',
+                contact_desc: "Dù bạn muốn làm gian hàng Alibaba.com, tìm nguồn cung ứng, đưa hàng vào siêu thị hay thảo luận về mô hình hợp tác góp vốn — hãy quét Zalo hoặc gửi email trực tiếp để trao đổi cụ thể.",
+                contact_c1_label: "Chuyên Gia Tư Vấn",
+                contact_c1_role: "Account Manager · Alibaba.com Việt Nam",
+                contact_c2_label: "Email Chính Thức",
+                contact_c2_sub: "Tiếp nhận hồ sơ năng lực & đề xuất hợp tác 24/7",
+                contact_c3_label: "Địa Chỉ Làm Việc",
+                contact_c3_addr: "Tầng 19, Tòa nhà Saigon Centre, 67 Lê Lợi, P. Bến Nghé, Quận 1, TP.HCM",
+                zalo_box_badge: "MÃ ZALO CHÍNH THỨC",
+                zalo_box_title: "Quét Mã Zalo Võ Sỹ Sơn",
+                zalo_box_desc: "Nhận trọn bộ Báo cáo ngành 2026 & Tư vấn chiến lược 1:1 miễn phí",
+                zalo_box_scan_hint: '<i class="fa-solid fa-camera text-orange-600 text-sm"></i> Mở ứng dụng Zalo trên điện thoại và quét mã QR ở trên',
+                zalo_btn_email: "Gửi Email: vosyson@alibaba-inc.com",
+                zalo_btn_open: "Mở Zalo Để Kết Nối Trực Tiếp",
+                footer_office: 'Email: <a href="mailto:vosyson@alibaba-inc.com" class="text-orange-400 font-bold hover:underline">vosyson@alibaba-inc.com</a> | Văn phòng: Tầng 19, Saigon Centre, 67 Lê Lợi, Bến Nghé, Quận 1, TP.HCM',
+                footer_crit: "Điều kiện",
+                footer_partner: "Đối tác",
+                footer_part: "Hợp tác",
+                footer_copy: "© 2026 Võ Sỹ Sơn. All rights reserved. Alibaba.com Account Manager · Văn phòng Saigon Centre TP.HCM.",
+                fab_tooltip: "Chat Zalo với Sỹ Sơn"
+            },
+            en: {
+                top_badge: "ALIBABA.COM SPECIALIST",
+                top_subtitle: "Global B2B Export Consulting · Domestic Supermarket Distribution · Joint Venture Partnership",
+                top_zalo_link: "Scan Zalo for 1-on-1 Consulting",
+                nav_role: "Alibaba.com Account Manager",
+                nav_criteria: "Requirements",
+                nav_alibaba: "Alibaba Solutions",
+                nav_sectors: "6 Key Industries",
+                nav_ecosystem: "Partner Ecosystem",
+                nav_partnership: "Co-Investment & Models",
+                nav_contact: "Contact & Zalo",
+                nav_cta_zalo: "Zalo QR Code",
+                nav_criteria_m: "Requirements (SMEs & Cooperatives)",
+                nav_alibaba_m: "Alibaba.com Solutions 2026",
+                nav_sectors_m: "6 Key Industries & Analytics",
+                nav_ecosystem_m: "Partners (Tran Thanh Hien & Aditya)",
+                nav_partnership_m: "Co-Investment & Commission Models",
+                nav_cta_zalo_m: "Scan Zalo QR to Connect Now",
+                hero_badge: "Empowering Vietnamese SMEs & Agricultural Cooperatives",
+                hero_title: 'Taking Vietnamese Products <br/><span class="text-gradient-orange">To Global Markets</span> &amp; <br/><span class="text-gradient-gold">Supermarket Chains</span>',
+                hero_desc: 'I am <strong>Vo Sy Son</strong>, dedicated to helping Vietnamese manufacturers, agricultural cooperatives, and trading companies build international-standard <strong>Alibaba.com</strong> export stores with only <strong>1–2 staff members</strong>. Simultaneously expanding domestic retail distribution into <strong>Supermarkets, Pharmacies, and Bookstores</strong>, with flexible <strong>Co-investment / Equity / Lifetime Discount</strong> models.',
+                stat_staff: "Lean Operations (1–2 Staff)",
+                stat_legal: "100% Valid Legal Entity & Products",
+                stat_ecosystem: "Alibaba + Supermarket + Global Sourcing",
+                hero_btn_zalo: "Scan Zalo for Market Reports & 1:1 Consultation",
+                hero_btn_partnership: "Co-Investment Partnership Models",
+                profile_role: "Account Manager · Alibaba.com Vietnam",
+                cred_email_label: "Official Email:",
+                cred_office_label: "Office:",
+                cred_office_val: "Level 19, Saigon Centre, 67 Le Loi, Ben Nghe, District 1, HCMC",
+                cred_commit_label: "Commitment:",
+                cred_commit_val: "End-to-end support from store setup and keyword optimization until your first export order.",
+                profile_btn_qr: "View Official Zalo QR Code",
+                crit_badge: "Simplifying B2B Global Export",
+                crit_title: "What Does Your Business Need to Start?",
+                crit_subtitle: "No complex organizational structure or prior export experience required. Every step is streamlined and personally guided.",
+                crit_box1_title: "1. Legal Entity & Quality Products",
+                crit_box1_desc: "Whether you are an <strong>SME, Cooperative (HTX), Household Business</strong> or <strong>Trading Company</strong> with a registered business license and verified Vietnamese products.",
+                crit_box1_li1: "No large factory scale requirement",
+                crit_box1_li2: "Full support for Trading firms & Agri cooperatives",
+                crit_box2_title: "2. Lean Team (1–2 Operators)",
+                crit_box2_desc: "Only <strong>1 to 2 dedicated personnel</strong> are needed to manage buyer inquiries, RFQ submissions, and negotiations. Intelligent AI translation tools eliminate language barriers.",
+                crit_box2_li1: "Real-time AI multi-language translation support",
+                crit_box2_li2: "1-on-1 practical hands-on training by specialists",
+                crit_box3_title: "3. Comprehensive B2B Optimization",
+                crit_box3_desc: "Guided professional minisite architecture, keyword SEO optimization, proactive buyer outreach via <strong>RFQ</strong>, and secure transaction guarantee with <strong>Trade Assurance</strong>.",
+                crit_box3_li1: "P4P / KWA advertising campaign optimization",
+                crit_box3_li2: "Real-time tracking of global buyer sourcing trends",
+                ali_badge: "World's #1 B2B E-Commerce Marketplace Infrastructure",
+                ali_title: "Alibaba.com Solutions & Global Tool Suite",
+                ali_subtitle: "An integrated ecosystem connecting Vietnamese enterprises with over 48 million active B2B buyers across 190+ countries.",
+                ali_tool1_title: "Global-Standard Digital Minisite",
+                ali_tool1_desc: "SEO-optimized custom storefront, unlimited product showcase, and official Verified Supplier / GGS certification.",
+                ali_tool2_title: "Proactive RFQ Quoting Rights",
+                ali_tool2_desc: "Direct access to thousands of daily Request for Quotation inquiries posted by global wholesale buyers.",
+                ali_tool3_title: "KWA / P4P Keyword Advertising",
+                ali_tool3_desc: "Boost product rankings to the top of buyer search results with smart AI-driven automated bidding algorithms.",
+                ali_tool4_title: "100% Trade Assurance Protection",
+                ali_tool4_desc: "International escrow payment protection, providing buyers peace of mind and guaranteeing full payment upon compliant delivery.",
+                sec_badge: "Alibaba.com Analytics Pro Data",
+                sec_title: "6 Key High-Growth Export Sectors 2026",
+                sec_subtitle: "Real-time analytics on daily buyer search volume, top purchasing markets, and active RFQ demand.",
+                sec1_badge: "Agriculture & Food",
+                sec1_title: "ST25 Rice, Coffee, Cashews, Pepper, Dried Fruits",
+                sec1_desc: "<strong>48,500+</strong> daily searches · <strong>1,250+</strong> daily RFQs. Top markets: Germany & EU (28.6%), USA (22.4%), UAE (18.2%), Japan (14.5%).",
+                sec1_adv: '<i class="fa-solid fa-lightbulb text-emerald-400 mr-1"></i> <strong>Key Advantage:</strong> Buyers favor HACCP, ISO, GlobalGAP, Organic certs and fast sample dispatch.',
+                sec1_cta: "Get Detailed Agriculture Report",
+                sec2_badge: "Apparel & Fashion",
+                sec2_title: "OEM/ODM Manufacturing, Uniforms, T-Shirts",
+                sec2_desc: "<strong>62,000+</strong> daily searches · <strong>1,820+</strong> daily RFQs. Top markets: USA (34.8%), Germany & UK (24.2%), Australia (12.5%), Canada (10.6%).",
+                sec2_adv: '<i class="fa-solid fa-lightbulb text-blue-400 mr-1"></i> <strong>Key Advantage:</strong> Superior craftsmanship, competitive pricing, fast turnaround, flexible MOQs.',
+                sec2_cta: "Get Detailed Apparel Report",
+                sec3_badge: "Furniture, Wood & Bamboo",
+                sec3_title: "Wooden Dining Sets, Rattan, Outdoor Furniture",
+                sec3_desc: "<strong>54,300+</strong> daily searches · <strong>1,450+</strong> daily container RFQs. Top markets: USA (38.6%), Europe (26.4%), Australia (14.2%).",
+                sec3_adv: '<i class="fa-solid fa-lightbulb text-amber-400 mr-1"></i> <strong>Key Advantage:</strong> Rapid CAD prototyping and full container shipment capabilities (FOB/CIF).',
+                sec3_cta: "Get Detailed Furniture Report",
+                sec3_trend: '<i class="fa-solid fa-trophy mr-1"></i>Top 5 Global',
+                sec4_badge: "Handicrafts & Decor",
+                sec4_title: "Ceramics, Woven Bamboo, Eco-Friendly Gifts",
+                sec4_desc: "<strong>29,400+</strong> daily searches · <strong>760+</strong> daily retail RFQs. Top markets: France, Italy & Germany (33.5%), USA (31.2%), Japan (14.8%).",
+                sec4_adv: '<i class="fa-solid fa-lightbulb text-purple-400 mr-1"></i> <strong>Key Advantage:</strong> Authentic cultural story, sustainable eco materials, high gross margins.',
+                sec4_cta: "Get Detailed Handicrafts Report",
+                sec5_badge: "Health & Wellness",
+                sec5_title: "Herbal Tea, Bird's Nest, Honey, Essential Oils",
+                sec5_desc: "<strong>36,800+</strong> daily searches · <strong>980+</strong> daily RFQs. Top markets: USA (29.5%), Japan (19.8%), Europe (18.4%), South Korea (16.2%).",
+                sec5_adv: '<i class="fa-solid fa-lightbulb text-rose-400 mr-1"></i> <strong>Key Advantage:</strong> High profitability; leverage FDA, GMP, Organic & Halal compliance for rapid closing.',
+                sec5_cta: "Get Detailed Health Report",
+                sec6_badge: "Packaging & Consumer Goods",
+                sec6_title: "Paper Boxes, Biodegradable Packaging, Canvas Bags",
+                sec6_desc: "<strong>42,600+</strong> daily searches · <strong>1,120+</strong> daily OEM RFQs. Top markets: USA (32.4%), EU (27.8%), Japan & Korea (15.2%).",
+                sec6_adv: '<i class="fa-solid fa-lightbulb text-teal-400 mr-1"></i> <strong>Key Advantage:</strong> FSC, ISO, and Biodegradable certified suppliers win massive Western orders.',
+                sec6_cta: "Get Detailed Packaging Report",
+                sec6_trend: '<i class="fa-solid fa-leaf mr-1"></i>+34.2% Eco',
+                eco_badge: "Multi-Channel Supply & Distribution Network",
+                eco_title: "Strategic Partner Ecosystem",
+                eco_subtitle: "Partnering with top industry leaders to resolve both domestic Modern Trade distribution and cross-border international export.",
+                partner1_tag: "Vietnam Domestic Distribution",
+                partner1_role: "Modern Trade Expert · Supermarkets · Pharmacies · Bookstores",
+                partner1_name: "Mr. Tran Thanh Hien",
+                partner1_badge_desc: '<i class="fa-solid fa-user-check mr-1 text-amber-400"></i> Former Sales Director / Senior Consultant for MT & GT Nationwide Networks',
+                partner1_exp: "Over two decades as Sales Director / Head of Sales for leading consumer brands (Lien Hoa, Bach Coffee, Xuan Thinh, Nam Hoa, Scops, Nha Trang Bird's Nest, DOHAMED, Rosemary Group...).",
+                partner1_point1: "Listing into major <strong>Supermarket Chains (MT):</strong> Co.opmart, WinMart, Lotte, BigC...",
+                partner1_point2: "Nationwide distribution into <strong>Pharmacy & Wellness chains</strong>.",
+                partner1_point3: "Penetrating expansive <strong>Bookstore networks & Convenience stores</strong>.",
+                partner1_sub: "Optimized channel solutions for consumer goods & health products",
+                partner1_btn: "Connect Domestic Distribution",
+                partner2_tag: "International Sourcing & Trade",
+                partner2_role: "Founder · TradeArc International Business Network (India)",
+                partner2_photo_cap: '<i class="fa-solid fa-globe mr-1"></i> Multi-national trade initiative connecting Vietnam, India & Global markets',
+                partner2_exp: "Strategic international partnership between <strong>Vietnam and India</strong>, expanding trade networks for global B2B suppliers and wholesale buyers.",
+                partner2_point1: "Connecting verified <strong>B2B Sourcing Channels</strong> across Vietnam, India, and global markets.",
+                partner2_point2: "Trade negotiation, product inspection, quality assurance, and export facilitation.",
+                partner2_point3: "Expanding market access across South Asia, the Middle East, and English-speaking regions.",
+                partner2_sub: "Accessing global B2B buyer sourcing networks",
+                partner2_btn: "Facilitate Global Trade",
+                part_badge: "Unique Collaboration Models",
+                part_title: "Partnership & Co-Investment Models with Vo Sy Son",
+                part_subtitle: "Beyond official Alibaba.com policies, I am ready to directly invest and partner in your project under flexible structures.",
+                part_model1_tag: "Exclusive",
+                part_model1_title: "Store Co-Investment & Equity",
+                part_model1_desc: "I am ready to <strong>co-invest capital directly</strong> or share store opening costs, taking an equity/profit-sharing stake in your Alibaba.com store project. Shared costs, shared risks, and shared long-term upside.",
+                part_model1_for_label: "Ideal for:",
+                part_model1_for_val: "Manufacturers with great products looking for an experienced e-commerce partner to co-invest and co-operate the project.",
+                part_model2_title: "Commission & Permanent Discount",
+                part_model2_desc: "Acting as your dedicated commercial agency and market developer, earning an <strong>order-based sales commission</strong> or <strong>permanent wholesale discount</strong> on long-term contracts.",
+                part_model2_for_label: "Ideal for:",
+                part_model2_for_val: "Pure manufacturers who want to outsource 100% of overseas business development, sales outreach, and negotiations to a specialist.",
+                part_model3_title: "Holistic Omnichannel Scaling",
+                part_model3_desc: "Synergizing <strong>Alibaba.com</strong> (global B2B export) + <strong>Supermarket & Pharmacy Chains</strong> (domestic Vietnam) + <strong>Global Sourcing</strong> (TradeArc) for sustainable growth.",
+                part_model3_for_label: "Ideal for:",
+                part_model3_for_val: "Enterprises seeking two-pronged growth: capturing massive domestic consumption while expanding export frontiers.",
+                contact_badge: "Direct 1-on-1 Consultation",
+                contact_title: 'Let’s Connect Directly <br/><span class="text-gradient-orange">See How I Can Accelerate Your Business</span>',
+                contact_desc: "Whether you want to launch an Alibaba.com store, source suppliers, enter domestic supermarket chains, or explore co-investment partnership models — scan my Zalo or send an email.",
+                contact_c1_label: "Consultant & Strategist",
+                contact_c1_role: "Account Manager · Alibaba.com Vietnam",
+                contact_c2_label: "Official Email",
+                contact_c2_sub: "Accepting corporate profiles & partnership proposals 24/7",
+                contact_c3_label: "Office Address",
+                contact_c3_addr: "Level 19, Saigon Centre, 67 Le Loi, Ben Nghe, District 1, Ho Chi Minh City",
+                zalo_box_badge: "OFFICIAL ZALO QR CARD",
+                zalo_box_title: "Scan Vo Sy Son's Zalo QR",
+                zalo_box_desc: "Receive comprehensive 2026 Industry Reports & Free 1:1 Strategic Consulting",
+                zalo_box_scan_hint: '<i class="fa-solid fa-camera text-orange-600 text-sm"></i> Open Zalo on your smartphone and scan the QR code above',
+                zalo_btn_email: "Send Email: vosyson@alibaba-inc.com",
+                zalo_btn_open: "Open Zalo App to Chat Directly",
+                footer_office: 'Email: <a href="mailto:vosyson@alibaba-inc.com" class="text-orange-400 font-bold hover:underline">vosyson@alibaba-inc.com</a> | Office: Level 19, Saigon Centre, 67 Le Loi, District 1, HCMC',
+                footer_crit: "Requirements",
+                footer_partner: "Partners",
+                footer_part: "Partnership",
+                footer_copy: "© 2026 Vo Sy Son. All rights reserved. Alibaba.com Account Manager · Saigon Centre Office HCMC.",
+                fab_tooltip: "Chat with Vo Sy Son on Zalo"
+            },
+            zh: {
+                top_badge: "阿里巴巴国际站专家",
+                top_subtitle: "B2B跨境出海咨询 · 越南本土商超入驻 · 平台店铺入股共创",
+                top_zalo_link: "扫码获取 1对1 咨询",
+                nav_role: "Alibaba.com 客户经理 (Account Manager)",
+                nav_criteria: "入驻条件",
+                nav_alibaba: "阿里方案",
+                nav_sectors: "6大核心行业",
+                nav_ecosystem: "战略伙伴",
+                nav_partnership: "合作共赢模式",
+                nav_contact: "联系与咨询",
+                nav_cta_zalo: "官方 Zalo 二维码",
+                nav_criteria_m: "入驻条件 (中小微企业 & 合作社)",
+                nav_alibaba_m: "2026 Alibaba.com 全球出海方案",
+                nav_sectors_m: "6大核心出口行业与深度数据",
+                nav_ecosystem_m: "战略伙伴 (陈清贤 & Aditya)",
+                nav_partnership_m: "入股共创与永久佣金机制",
+                nav_cta_zalo_m: "扫码立即建立对接",
+                hero_badge: "携手越南中小微企业 (SMEs) 与农业合作社共拓全球",
+                hero_title: '助力越南优质产品 <br/><span class="text-gradient-orange">扬帆出海全球</span> &amp; <br/><span class="text-gradient-gold">铺设本土商超</span>',
+                hero_desc: '我是 <strong>武士山 (Võ Sỹ Sơn)</strong>，致力于协助越南生产制造企业、农业合作社 (HTX) 及外贸贸易商打造国际标准的 <strong>Alibaba.com</strong> 跨境出口旺铺，仅需 <strong>1-2 名运营人员</strong> 即可高效起步。同时协同拓展越南本土<strong>大型商超 · 连锁药房 · 连锁书店</strong>零售渠道，并提供灵活的<strong>资金入股 / 股权共创 / 终身返佣</strong>合作模式。',
+                stat_staff: "极简人员运营 (1-2人)",
+                stat_legal: "具备合法资质与货源即可",
+                stat_ecosystem: "阿里跨境 + 本土商超 + 全球采销",
+                hero_btn_zalo: "扫码获取行业深度报告与 1对1 咨询",
+                hero_btn_partnership: "探索入股共创机制",
+                profile_role: "客户经理 · Alibaba.com 越南",
+                cred_email_label: "官方企业邮箱：",
+                cred_office_label: "办公地址：",
+                cred_office_val: "胡志明市第1郡滨义坊黎利街67号西贡中心 (Saigon Centre) 19楼",
+                cred_commit_label: "服务承诺：",
+                cred_commit_val: "从旺铺搭建、关键词SEO优化全程陪跑，直至斩获首单海外出口订单。",
+                profile_btn_qr: "查看官方 Zalo 联络码",
+                crit_badge: "极简化全球 B2B 跨境出口",
+                crit_title: "企业开启出海需要准备什么？",
+                crit_subtitle: "无需庞大复杂的团队架构，无需深奥的外贸经验。所有流程均已高度标准化并提供专属专家指导。",
+                crit_box1_title: "1. 具备合法资质与实体产品",
+                crit_box1_desc: "无论您是 <strong>中小微制造企业 (SMEs)、农业合作社 (HTX)、个体经营户</strong> 还是 <strong>贸易公司</strong>，只要拥有合法商业资质并具备稳定的越南本土货源。",
+                crit_box1_li1: "不设大型厂房规模门槛",
+                crit_box1_li2: "全面支持贸易公司与农业合作社",
+                crit_box2_title: "2. 精简团队架构 (1-2 人)",
+                crit_box2_desc: "仅需 <strong>1 至 2 名专职人员</strong> 负责在线询盘沟通、RFQ主动报价与海外买家对接。借助平台前沿 AI 智能工具，跨语言沟通毫无障碍。",
+                crit_box2_li1: "AI 实时多语言翻译与智能辅助",
+                crit_box2_li2: "专家 1对1 手把手实战技能培训",
+                crit_box3_title: "3. 全程深度陪跑与 B2B 优化",
+                crit_box3_desc: "提供专业数字旺铺搭建指导、关键词 SEO 排名优化、通过 <strong>RFQ</strong> 商业机会主动获客，并借助 <strong>Trade Assurance (信保)</strong> 保障跨境交易安全。",
+                crit_box3_li1: "P4P / KWA 智能关键词引流推广",
+                crit_box3_li2: "实时洞察全球买家真实采购风向",
+                ali_badge: "全球领先的 B2B 跨境电商基础设施",
+                ali_title: "Alibaba.com 核心出海解决方案与工具矩阵",
+                ali_subtitle: "构建强大数字出海生态，助力越南企业直连全球 190+ 国家与地区、超过 4800 万活跃 B2B 专业买家。",
+                ali_tool1_title: "国际标准数字化 Minisite 旺铺",
+                ali_tool1_desc: "搭建符合 Google 及站内 SEO 规范的数字化独立门面，无限量展示优质商品，并享有官方权威实体验证标识 (Verified Supplier / GGS)。",
+                ali_tool2_title: "主动抢单与 RFQ 商业机会",
+                ali_tool2_desc: "直达全球买家每日发布的数万条真实采购需求 (Request for Quotation)，先人一步主动报价赢取订单。",
+                ali_tool3_title: "KWA / P4P 关键词推广",
+                ali_tool3_desc: "抢占买家搜索核心首屏黄金展位，依托 AI 智能算法实现高效低成本精准引流与转化。",
+                ali_tool4_title: "100% Trade Assurance 信保",
+                ali_tool4_desc: "国际第三方信用担保与资金存管机制，让海外买家放心付定金，保障卖家按约发货后足额安全收款。",
+                sec_badge: "Alibaba.com Analytics Pro 官方数据洞察",
+                sec_title: "2026 年越南出海 6 大高增长核心行业",
+                sec_subtitle: "基于平台真实海外买家搜索频次、核心采购国分布及每日高价值 RFQ 询盘数据统计。",
+                sec1_badge: "农产品与食品加工",
+                sec1_title: "ST25大米、精品咖啡、腰果、胡椒、冻干果干",
+                sec1_desc: "<strong>48,500+</strong> 次日均搜索 · <strong>1,250+</strong> 条日均 RFQ。核心市场：德国及欧盟 (28.6%)、美国 (22.4%)、阿联酋 (18.2%)、日本 (14.5%)。",
+                sec1_adv: '<i class="fa-solid fa-lightbulb text-emerald-400 mr-1"></i> <strong>核心优势：</strong> 买家高度看重 HACCP、ISO、GlobalGAP、Organic 认证及快速打样寄样能力。',
+                sec1_cta: "获取农产品行业专属深度报告",
+                sec2_badge: "服装与时尚纺织",
+                sec2_title: "OEM/ODM 服装代工、企业制服、环保棉T恤",
+                sec2_desc: "<strong>62,000+</strong> 次日均搜厂量 · <strong>1,820+</strong> 条日均 RFQ。核心市场：美国 (34.8%)、德国与英国 (24.2%)、澳大利亚 (12.5%)、加拿大 (10.6%)。",
+                sec2_adv: '<i class="fa-solid fa-lightbulb text-blue-400 mr-1"></i> <strong>核心优势：</strong> 精湛车缝工艺、高性价比、交期准时，且起订量 (MOQ) 灵活契合中小型品牌需求。',
+                sec2_cta: "获取服装行业专属深度报告",
+                sec3_badge: "家具、木制品与竹藤",
+                sec3_title: "实木餐桌椅、藤编工艺家具、户外庭院家具",
+                sec3_desc: "<strong>54,300+</strong> 次日均搜索 · <strong>1,450+</strong> 条日均集装箱 RFQ。核心市场：美国 (38.6%)、欧洲 (26.4%)、澳大利亚 (14.2%)。",
+                sec3_adv: '<i class="fa-solid fa-lightbulb text-amber-400 mr-1"></i> <strong>核心优势：</strong> 具备根据 CAD 图纸快速打样及整柜出货能力 (FOB/CIF)。',
+                sec3_cta: "获取木艺家具行业专属深度报告",
+                sec3_trend: '<i class="fa-solid fa-trophy mr-1"></i>全球前 5 强',
+                sec4_badge: "手工艺品与家居装饰",
+                sec4_title: "传统陶瓷、竹编收纳、绿色环保文创礼品",
+                sec4_desc: "<strong>29,400+</strong> 次日均搜索 · <strong>760+</strong> 条日均连锁零售商 RFQ。核心市场：法国/意大利/德国 (33.5%)、美国 (31.2%)、日本 (14.8%)。",
+                sec4_adv: '<i class="fa-solid fa-lightbulb text-purple-400 mr-1"></i> <strong>核心优势：</strong> 浓厚本土文化底蕴、环保可持续天然原材料、高毛利溢价空间。',
+                sec4_cta: "获取手工艺品行业专属深度报告",
+                sec5_badge: "大健康与养生美妆",
+                sec5_title: "草本养生茶、高品质燕窝、纯天然蜂蜜、植物精油",
+                sec5_desc: "<strong>36,800+</strong> 次日均搜索 · <strong>980+</strong> 条日均询盘。核心市场：美国 (29.5%)、日本 (19.8%)、欧洲 (18.4%)、韩国 (16.2%)。",
+                sec5_adv: '<i class="fa-solid fa-lightbulb text-rose-400 mr-1"></i> <strong>核心优势：</strong> 产品毛利丰厚；完备的 FDA、GMP、Organic/Halal 资质可大幅加速大单成交。',
+                sec5_cta: "获取大健康行业专属深度报告",
+                sec6_badge: "绿色包装与日常消费品",
+                sec6_title: "精品纸盒、全生物降解包装、帆布环保袋",
+                sec6_desc: "<strong>42,600+</strong> 次日均搜索 · <strong>1,120+</strong> 条日均 OEM 询盘。核心市场：美国 (32.4%)、欧盟 (27.8%)、日韩 (15.2%)。",
+                sec6_adv: '<i class="fa-solid fa-lightbulb text-teal-400 mr-1"></i> <strong>核心优势：</strong> 拥有 FSC、ISO 与降解环保认证的工厂深受欧美大型采购商青睐。',
+                sec6_cta: "获取包装行业专属深度报告",
+                sec6_trend: '<i class="fa-solid fa-leaf mr-1"></i>+34.2% 环保',
+                eco_badge: "全渠道多元化供销协同网络",
+                eco_title: "战略合作伙伴生态体系",
+                eco_subtitle: "携手各领域资深专家，一站式攻克越南本土现代化商超零售与跨国海外 B2B 出口两大核心诉求。",
+                partner1_tag: "越南本土核心分销渠道",
+                partner1_role: "现代渠道拓展专家 · 大型商超 · 连锁药房 · 连锁书店",
+                partner1_name: "陈清贤 (Trần Thanh Hiền)",
+                partner1_badge_desc: '<i class="fa-solid fa-user-check mr-1 text-amber-400"></i> 前知名集团销售总监 / 全国 MT & GT 渠道高级顾问',
+                partner1_exp: "曾任职数十家知名集团与标杆品牌的销售总监及销售负责人 (涵盖 Lien Hoa、Bach Coffee、Xuan Thinh、Nam Hoa、Scops、Nha Trang 燕窝、DOHAMED、Rosemary Group 等)。",
+                partner1_point1: "深度铺设<strong>主流大型连锁商超 (MT)：</strong> Co.opmart、WinMart、Lotte Mart、BigC 等。",
+                partner1_point2: "无缝切入<strong>全国连锁药房及大健康个护渠道</strong>。",
+                partner1_point3: "广泛覆盖<strong>全国大型新华书店、文具店及精品便利店网络</strong>。",
+                partner1_sub: "快消品、食品与大健康品类的终极渠道解决方案",
+                partner1_btn: "对接本土商超渠道",
+                partner2_tag: "国际采销与跨国贸易网络",
+                partner2_role: "创始人 · TradeArc 国际商业网络 (印度)",
+                partner2_photo_cap: '<i class="fa-solid fa-globe mr-1"></i> 越南 - 印度及全球多边贸易互联战略倡议',
+                partner2_exp: "<strong>越南与印度</strong>跨国战略合作倡议，为全球优质 B2B 供应商与专业大买家打通无缝对接的双向贸易通道。",
+                partner2_point1: "直连越南、印度与海外高信用度 <strong>B2B 优质货源与供应链 (Sourcing)</strong>。",
+                partner2_point2: "全方位支持跨国商务谈判、验厂质检、贸易合规与进出口通关加速。",
+                partner2_point3: "强势拓展南亚、中东及主要英语国家高潜力增量市场。",
+                partner2_sub: "连通全球采购商与大买家资源网络",
+                partner2_btn: "促进国际进出口贸易",
+                part_badge: "独树一帜的共创机制",
+                part_title: "与武士山 (Võ Sỹ Sơn) 的多元合作模式",
+                part_subtitle: "在阿里巴巴官方标准化扶持政策之外，我更愿意以多元灵活的共赢模式深度参与到您的商业项目中。",
+                part_model1_tag: "重磅推荐",
+                part_model1_title: "资金入股 / 旺铺股权共创",
+                part_model1_desc: "我愿意<strong>直接投入资金</strong>或分担平台开店运营成本，以股权合伙人身份深度参与您的 Alibaba.com 出海项目。共担风险、共摊成本、共享长期丰厚收益。",
+                part_model1_for_label: "适合对象：",
+                part_model1_for_val: "具备优秀实体产品与稳定产能，但渴望有懂跨境电商的专家一同出资、全程共担并联手操盘的制造企业。",
+                part_model2_title: "商业代理销售与永久佣金",
+                part_model2_desc: "担任您的专属商业外贸销售代理与市场开拓方，按照<strong>订单成交金额提取佣金</strong>或签署长期协议享受<strong>终身采购优惠折让</strong>。",
+                part_model2_for_label: "适合对象：",
+                part_model2_for_val: "专注精益生产、希望将海外获客、商务洽谈与合同推进全权交由专家托管的工厂及源头供应商。",
+                part_model3_title: "内外贸全渠道立体化增长",
+                part_model3_desc: "深度整合 <strong>Alibaba.com</strong> (全球 B2B 出口) + <strong>本土大型商超/药房/书店</strong> (越南内销) + <strong>国际采销资源</strong> (TradeArc)，构建极具抗风险能力的稳健供应链。",
+                part_model3_for_label: "适合对象：",
+                part_model3_for_val: "谋求双轮驱动发展的企业：既牢牢把握越南本土庞大消费市场，又积极扬帆出海开拓全球新蓝海。",
+                contact_badge: "1对1 官方直连",
+                contact_title: '随时与我深入沟通 <br/><span class="text-gradient-orange">探索我能如何助力您的业务腾飞</span>',
+                contact_desc: "无论您是计划搭建 Alibaba.com 国际旺铺、寻求优质货源采销、进驻越南大型商超，还是探讨资金入股共创模式 —— 欢迎随时扫码添加 Zalo 或发送邮件对接。",
+                contact_c1_label: "官方咨询专家",
+                contact_c1_role: "客户经理 · Alibaba.com 越南",
+                contact_c2_label: "官方企业邮箱",
+                contact_c2_sub: "全天候 24/7 接收企业能力介绍与合作提案",
+                contact_c3_label: "实体办公地址",
+                contact_c3_addr: "胡志明市第1郡滨义坊黎利街67号西贡中心 (Saigon Centre) 19楼",
+                zalo_box_badge: "官方 ZALO 二维码名片",
+                zalo_box_title: "扫码添加武士山 (Võ Sỹ Sơn)",
+                zalo_box_desc: "免费获取 2026 年度行业白皮书与 1对1 出海定制战略诊断",
+                zalo_box_scan_hint: '<i class="fa-solid fa-camera text-orange-600 text-sm"></i> 请打开手机 Zalo App 扫描上方二维码名片',
+                zalo_btn_email: "发送邮件至: vosyson@alibaba-inc.com",
+                zalo_btn_open: "打开 Zalo App 直接建立会话",
+                footer_office: '企业邮箱: <a href="mailto:vosyson@alibaba-inc.com" class="text-orange-400 font-bold hover:underline">vosyson@alibaba-inc.com</a> | 办公室: 胡志明市第1郡西贡中心 (Saigon Centre) 19楼',
+                footer_crit: "入驻条件",
+                footer_partner: "战略伙伴",
+                footer_part: "合作模式",
+                footer_copy: "© 2026 Võ Sỹ Sơn (武士山). 版权所有. Alibaba.com 客户经理 · 胡志明市西贡中心办公室。",
+                fab_tooltip: "通过 Zalo 与 Sỹ Sơn 在线交流"
+            }
+        };
+
+        function setLanguage(lang) {
+            if (!i18n[lang]) return;
+            
+            // Update document language
+            document.documentElement.lang = lang;
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred_lang', lang);
+
+            // Update UI buttons styling
+            const viBtn = document.getElementById('lang-btn-vi');
+            const enBtn = document.getElementById('lang-btn-en');
+            const zhBtn = document.getElementById('lang-btn-zh');
+            
+            const activeClass = "px-2.5 py-1 text-xs font-black rounded-lg transition-all bg-white text-orange-600 shadow-sm";
+            const inactiveClass = "px-2.5 py-1 text-xs font-black rounded-lg transition-all text-slate-500 hover:text-slate-900";
+
+            if (viBtn) viBtn.className = (lang === 'vi') ? activeClass : inactiveClass;
+            if (enBtn) enBtn.className = (lang === 'en') ? activeClass : inactiveClass;
+            if (zhBtn) zhBtn.className = (lang === 'zh') ? activeClass : inactiveClass;
+
+            // Mobile switcher active state
+            const mobileActive = "px-2.5 py-1 text-xs font-bold rounded bg-white text-orange-600";
+            const mobileInactive = "px-2.5 py-1 text-xs font-bold rounded text-slate-600";
+            const mLangs = { vi: document.getElementById('lang-m-vi'), en: document.getElementById('lang-m-en'), zh: document.getElementById('lang-m-zh') };
+            Object.keys(mLangs).forEach(code => {
+                if (mLangs[code]) mLangs[code].className = (code === lang) ? mobileActive : mobileInactive;
+            });
+
+            // Update all elements with data-i18n
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (i18n[lang] && i18n[lang][key]) {
+                    el.innerHTML = i18n[lang][key];
+                }
+            });
+
+            // Dynamically update Hero Poster Image according to language
+            const posterImg = document.getElementById('hero-poster-img');
+            if (posterImg) {
+                if (lang === 'en') {
+                    posterImg.src = 'https://sc02.alicdn.com/kf/A1a93d05471dd4d2bbcd5a1e44704f162L.png';
+                    posterImg.alt = 'Vo Sy Son - Alibaba.com Vietnam Global B2B Export';
+                } else if (lang === 'zh') {
+                    posterImg.src = 'https://sc02.alicdn.com/kf/A1a93d05471dd4d2bbcd5a1e44704f162L.png';
+                    posterImg.alt = '武士山 (Vo Sy Son) - Alibaba.com 越南全球B2B出口';
+                } else {
+                    posterImg.src = 'https://sc02.alicdn.com/kf/S1bb5d3be76ab41fa96ece6e742c53e5fy.jpg';
+                    posterImg.alt = 'Võ Sỹ Sơn - Alibaba.com Việt Nam';
+                }
+            }
+        }
+
+        // Initialize language from localStorage or default to Vietnamese
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedLang = localStorage.getItem('preferred_lang') || 'vi';
+            setLanguage(savedLang);
+        });
+    </script>
+</body>
+</html>
